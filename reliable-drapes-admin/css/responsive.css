@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 1920px) {
+.eikaebana_body, .main_header , footer .admin_footer {
+    width: 100%;
+    float: left;
+}
+}
+@media (max-width: 1920px) {
+.add_NewCoupon2 {
+
+    right: 15px;
+
+}
+}
+@media (max-width: 1366px) {
+    .users .form_model {
+
+        transform: translate(-50%, 20%);
+    }
+
+    .brands_drop span.Left_3 {
+        width: 36%;
+    }
+    .brands_drop span.Left_2 {
+        width: 37%;
+    }
+    a.navbar-brand img {left: 41%;top: 70px;}
+    .profile_header2 {
+        position: relative;
+    }
+    .detail_list1 {
+        width: 72%;
+    }
+    .detail_list2 {
+        width: 28%;
+    }
+    .Order_Status1 {
+        width: 20%;
+
+    }
+    .Order_Status1 {
+        width: 33%;
+        margin-left: 0px;
+    }
+    .payment_status {width: 30%;}
+    .Order_Detail1 {
+        width: 30%;
+    }
+
+    .Order_Status1 .status_drop {
+        margin-bottom: 0;
+        display: flex;
+    }
+    .orderList_box2 {
+
+        right: 14px;
+        max-width: 24%;
+    }
+
+}
+@media (max-width: 767px) {
+.bottom_footer_eikaebana p, .bottom_footer_eikaebana p a {
+    text-align: center;
+}
+.bottom-footer p.float_center {
+    text-align: center;
+    margin-top: 4px;
+}
+.from__section {
+    padding: 50px 0;
+}
+.Login-sd h1 {
+    line-height: 38px;
+    font-size: 28px;
+}
+}
+@media (max-width: 600px) {
+.form_model {
+    width: 100%;
+}
+
+}
+@media (max-width: 480px) {
+.from__section {
+    padding: 40px 0;
+}
+.Login-sd h1 {
+    line-height: 36px;
+    font-size: 26px;
+}
+}

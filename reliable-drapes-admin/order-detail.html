@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8" />
+<title>Order Detail</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/vendors.bundle.css" rel="stylesheet" type="text/css" />
+<link href="css/style.bundle.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+<link rel="shortcut icon" href="images/fav-icon.ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="login_form_pages m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled  m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default savoline--body">
+  <div class="m-grid m-grid--hor m-grid--root m-page">
+    <header class="m-grid__item m-header m-header-new savoline_header" data-minimize-offset="200" data-minimize-mobile-offset="200">
+      <div class="m-container m-container--fluid m-container--full-height">
+        <div class="m-stack m-stack--ver m-stack--desktop">
+          <div class="m-stack__item m-brand m-brand-new eikaebana-logo">
+            <div class="m-stack m-stack--ver m-stack--general"><a href="../../index.html" class="logo-wrapper"> <img alt="Eikaebana logo" src="images/logo.svg"></a> </div>
+          </div>
+          <div class="head-border">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header__section">
+              <div class="search_div">
+                <div class="input__field"> <i class="las la-search Search_Icon"></i>
+                  <input type="text" class="form-control" placeholder="Search for....">
+                  <a href="" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a> </div>
+              </div>
+              <div class="float-right header_icons">
+                <ul class="header__list">
+                  <li class="header_icons_set"> <a href="#"><i class="lar la-bell icons__prop"></i></a></li>
+                  <li class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right header_icons_set" data-dropdown-toggle="hover" aria-expanded="true"> <span class="profile_visit"> <a href="#"> <span class="header_list_item">Admin <i class="las la-angle-down"></i> </span> </a></span>
+                    <div class="m-dropdown__wrapper"> <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 70.172px;"></span>
+                      <div class="m-dropdown__inner">
+                        <div class="m-dropdown__body">
+                          <div class="m-dropdown__content">
+                            <ul class="m-nav">
+                              <li class="m-nav__section m-nav__section--first m--hide"> <span class="m-nav__section-text"> Quick Actions </span> </li>
+                              <li class="m-nav__item"> <a href="#" class="m-nav__link"> <i class="m-nav__link-icon las la-user profile__icon"></i> <span class="profile__text"> View Profile </span> </a> </li>
+                              <li class="m-nav__item"> <a href="#" class="m-nav__link"> <i class="m-nav__link-icon las la-unlock-alt profile__icon"></i> <span class="profile__text"> Change Password </span> </a> </li>
+                              <li class="m-nav__item"> <a href="#" class="m-nav__link"> <i class="m-nav__link-icon las la-sign-in-alt profile__icon"></i> <span class="profile__text"> Logout </span> </a> </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+      <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"> <i class="las la-close"></i> </button>
+      <div id="m_aside_left" class="m-grid__item	m-aside-left vendor-skin-light savoline_sidebar">
+        <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--submenu-skin-dark" data-menu-vertical="true" data-menu-scrollable="false" data-menu-dropdown-timeout="500">
+          <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
+            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
+              <a href="#" class="m-menu__link "> 
+                <i class="las la-tachometer-alt"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Dashboard </span> </span> </h4>
+              </a>
+            </li>
+            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
+              <a href="products.html" class="m-menu__link "> 
+                <i class="las la-boxes"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Products </span> </span> </h4>
+              </a>
+              <ul class="sidebar_dropdown" style="display: none;">
+                <li><a href="products.html">All Products</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+              </ul> 
+            </li>
+            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
+              <a href="orders.html" class="m-menu__link "> 
+                <i class="las la-list"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Orders </span> </span> </h4>
+              </a>
+            </li>
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="customer.html" class="m-menu__link ">
+                <i class="las la-user-tie"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Customer </span> </span> </h4>
+              </a>
+            </li>
+            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
+              <a href="coupons.html" class="m-menu__link "> 
+                <i class="las la-tags"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Coupons </span> </span> </h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="m-grid__item m-grid__item--fluid m-wrapper">
+        <div class="m-content padding-bottom-0">
+          <div class="OrderList__heading">
+            <div class="order__head">
+              <h1><button type="button"><i class="las la-arrow-left"></i></button>Order Detail</h1>
+            </div>
+            <div>
+              <a href="#" class="btn_SavePro">Invoice</a>
+              <a href="#" class="btn_SavePro ml-1" data-toggle="modal" data-target="#trackOrder_Modal">Tracking Detail</a>
+            </div>
+          </div>
+          <div class="orderList_box_bg_white">
+            <div class="background_box">
+              <div class="orderDetail_list">
+                <ul>
+                  <li>
+                    <h5><i class="las la-luggage-cart"></i> Order Number</h5>
+                    <p class="order_id">CSX5678</p>
+                  </li>
+                  <li>
+                    <h5><i class="las la-luggage-cart"></i> Order Items</h5>
+                    <p>9</p>
+                  </li>
+                  <li>
+                    <h5><i class="las la-luggage-cart"></i> Order Total</h5>
+                    <p>Rs. 7,000</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <h5><i class="las la-money-check"></i> Payment Mode</h5>
+                    <p>Razorpay / Payment id</p>
+                  </li>
+                  <li>
+                    <h5><i class="las la-calendar-check"></i> Date of Order</h5>
+                    <p>5 September, 2020</p>
+                  </li>
+                  <li>
+                    <h5><i class="las la-luggage-cart"></i> Order Status</h5>
+                    <p class="Size--list">
+                      <span class="mr-2">
+                        <select class="download_drop">
+                          <option selected="selected">Confirmed</option>
+                          <option>Processed</option>
+                          
+                        <option>Fullfilled</option></select>
+                      </span>
+                      <span class="download_drop">Fullfilled</span>
+                    </p>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="tackingInput">
+                    <h5><i class="las la-map-marked-alt"></i> Tracking Detail</h5>
+                    <div class="tracking_options">
+                      <p>
+                        <label class="contain_box">
+                          <input type="radio" class="form_check_add" name="id" value="id" checked="">
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>AWB No.</span>
+                      </p>
+                      <p>
+                        <label class="contain_box">
+                          <input type="radio" class="form_check_add" name="id" value="id">
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Tracking Id</span>
+                      </p>
+                      <p>
+                        <label class="contain_box">
+                          <input type="radio" class="form_check_add" name="id" value="id">
+                          <span class="checkmark"></span>
+                        </label>
+                        <span>Order Id</span>
+                      </p>
+                    </div>
+                    <div class="tracking_input">
+                      <div>
+                        <input type="text" placeholder="AWB No.">
+                        <a href="#" class="btn_SavePro">Save</a>
+                      </div>
+                      <div class="entered_id">
+                        <p>AWB No. : 67672655452</p>
+                        <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="order_content">
+                <div class="show_details">
+                  <ul>
+                    <li>
+                      <div class="header_userDtl">User Detail</div>
+                      <div class="user_detail">
+                        <p><i class="las la-user-alt"></i> Amar</p> 
+                        <p><i class="lar la-envelope"></i> example@gmail.com</p> 
+                        <p><i class="las la-phone"></i> 2233445566</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="header_userDtl">Shipping Address</div>
+                      <div class="user_detail">
+                        <p>Lusifar Aura</p>
+                        <p>House No. #89088</p>
+                        <p>Shimla, Himachal Pradesh</p>
+                        <p>179090</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="header_userDtl">Billing Address</div>
+                      <div class="user_detail">
+                        <p>Lusifar Aura</p>
+                        <p>House No. #89088</p>
+                        <p>Shimla, Himachal Pradesh</p>
+                        <p>179090</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="Product_itemList">
+                <div class="m-section__content">
+                  <table class="table m-table product_table">
+                    <thead class="table_header">
+                      <tr>
+                        <th scope="col" width="10%">Image</th>
+                        <th scope="col" width="27%">Product</th>
+                        <th scope="col" width="15%">Unit</th>
+                        <th scope="col" width="16%">Price</th>
+                        <th scope="col" width="16%">Quantity</th>
+                        <th scope="col" width="16%">Total</th>
+                      </tr> 
+                    </thead>
+                    <tbody class="table_bg">
+                      <tr>
+                        <td><div class="img_side">
+                          <img src="images/curtain.jpg" alt="Product Image">
+                        </div>
+                      </td>
+                        <td>
+                          <p>Cloth Fusion Velvet Door Curtain</p>
+                          <p class="variant_prop"> White / 7 ft</p>
+                        </td> 
+                        <td>Rs. 500</td> 
+                        <td>Rs. 500</td> 
+                        <td>2</td> 
+                        <td>Rs. 1,000</td> 
+                      </tr>
+                      <tr>
+                        <td><div class="img_side">
+                          <img src="images/curtain1.jpg" alt="Product Image">
+                        </div>
+                      </td>
+                        <td>
+                          <p>Fashion String Polyester 2 Pieces Door Curtain Set,</p>
+                          <p class="variant_prop"> White / 7 ft</p>
+                    
+                      </td> 
+                        <td>Rs. 500</td> 
+                        <td>Rs. 500</td> 
+                        <td>4</td> 
+                        <td>Rs. 2,000</td> 
+                      </tr>
+                      <tr> 
+                        <td><div class="img_side">   
+                           <img src="images/curtain2.jpg" alt="Product Image">
+                          </div>
+                        </td>
+                        <td>
+                        
+                          <p>Tranquebar Curtain Co. 'Yori'- Premium Cotton Door Curtains with Bird Print</p>
+                          <p class="variant_prop"> White / 7 ft</p>
+                        
+                      </td>
+                        <td>Rs. 500</td>
+                        <td>Rs. 500</td>
+                        <td>4</td>
+                        <td>Rs. 2,000</td>
+                      </tr>
+                      <tr> 
+                        <td><div class="img_side"><img src="images/curtain.jpg" alt="Product Image"></div></td>
+                        <td>
+                          <p>Cloth Fusion Velvet Door Curtain</p>
+                          <p class="variant_prop"> White / 7 ft</p>
+                        </td>
+                        <td>Rs. 500</td>
+                        <td>Rs. 500</td>
+                        <td>4</td>
+                        <td>Rs. 2,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="Price_detail">
+                  <h3>Price Detail</h3>
+                  <div class="product_detail">
+                    <ul>
+                      <li>
+                        <p><span class="left_text">Subtotal</span><span class="price_detail">Rs. 7,000</span></p>
+                      </li>
+                      <li>
+                        <p class="red_txt"><span class="left_text">Delivery Charges</span><span class="price_detail"> + Rs. 200</span></p>
+                      </li>
+                      <li>
+                        <p class="red_txt"><span class="left_text">GST(%)</span><span class="price_detail">+ Rs. 200</span></p>
+                      </li>
+                      <li>
+                        <p class="green_txt"><span class="left_text">Dicsount</span><span class="price_detail">- Rs. 200</span></p>
+                      </li>
+                      <li>
+                        <p class="green_txt"><span class="left_text">Coupon applied (Save 15)</span><span class="price_detail">- Rs. 200</span></p>
+                      </li>
+                      <li>
+                        <p class="total_txt"><span class="left_text">Total</span><span class="price_detail">Rs. 7,000</span></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ORDER TRACKING DETAIL MODAL =====--->
+          <div class="modal fade bg__transparent show" id="trackOrder_Modal" tabindex="-1" role="dialog" aria-labelledby="orderTracking_ModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header tackDtl_head">
+                  <h3 class="m-login__title addsku_head" id="orderTracking_ModalLabel"> Tracking Detail <span class="airWayBill"> AWB: 76763745656563 </span> </h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="m-login__signin"> <span class="tracking_div">
+                    <div class="track_detailBox">
+                      <div class="track_Boxdata">
+                        <ul class="time_detail">
+                          <li>
+                            <p class="that_date">Thu, 10 jan 2020, 20:24:00 </p>
+                            <p class="that_time">Guwahati</p>
+                          </li>
+                          <li>
+                            <p class="that_date">Thu, 10 jan 2020, 12:28:36</p>
+                            <p class="that_time">GUWAHATI</p>
+                          </li>
+                          <li>
+                            <p class="that_date">wed, 9 jan 2020, 17:41:57</p>
+                            <p class="that_time">Guwahati</p>
+                          </li>
+                          <li>
+                            <p class="that_date">Tue, 8 jan 2020, 06:51:32 </p>
+                            <p class="that_time">Guwahati, Assam</p>
+                          </li>
+                          <li>
+                            <p class="that_date">Tue, 8 jan 2020, 03:48:23 </p>
+                            <p class="that_time">Guwahati, Assam</p>
+                          </li>
+                          <li>
+                            <p class="that_date">Mon, 7 jan 2020, 23:36:38 </p>
+                            <p class="that_time">Bhiwandi, MAHARASHTRA</p>
+                          </li>
+                        </ul>
+                        <ul class="Sprogress_bar">
+                          <li>
+                            <div class="line_circle"></div>
+                            <div class="horizontal_line"></div>
+                          </li>
+                          <li>
+                            <div class="line_circle"></div>
+                            <div class="horizontal_line"></div>
+                          </li>
+                          <li>
+                            <div class="line_circle"></div>
+                            <div class="horizontal_line"></div>
+                          </li>
+                          <li>
+                            <div class="line_circle"></div>
+                            <div class="horizontal_line"></div>
+                          </li>
+                          <li class="bar_progressColor">
+                            <div class="line_circle"></div>
+                            <div class="horizontal_line"></div>
+                          </li>
+                          <li class="bar_progressColor">
+                            <div class="line_circle"></div>
+                          </li>
+                        </ul>
+                        <ul class="status_detail">
+                          <li>
+                            <h6 class="order_status">Deliverd</h6>
+                          </li>
+                          <li>
+                            <h6 class="order_status">Shipment is Out for Delivery</h6>
+                          </li>
+                          <li>
+                            <p class="status_dtl">Arrived at Delivery Center Kharar(NOR-KHA)-DC</p>
+                          </li>
+                          <li>
+                            <h6 class="order_status">Shipped to Delivery Center.</h6>
+                            <p class="status_dtl">Tracking ID - #1101010</p>
+                            <p class="status_dtl">Courier Service Myntra Logistics</p>
+                          </li>
+                          <li>
+                            <h6 class="order_status">Item Packed in Dispatch Warehouse</h6>
+                          </li>
+                          <li>
+                            <h6 class="order_status">Order Placed</h6>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    </span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ORDER TRACKING DETAIL MODAL END =====---> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendors.bundle.js" type="text/javascript"></script> 
+  <script src="js/scripts.bundle.js" type="text/javascript"></script> 
+  <script src="js/bootstrap.min.js" type="text/javascript"></script> 
+  <script src="js/jquery.min.js" type="text/javascript"></script> 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
