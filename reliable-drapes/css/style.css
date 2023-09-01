@@ -73,7 +73,7 @@ section {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 22px;
-    font-weight: 300;
+    font-weight: 400;
     color: #ffffff;
     padding: 13px 30px;
     border-radius: 1px;
@@ -474,7 +474,7 @@ section {
     color: #000000;
     display: flex;
     gap: 10px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     align-items: center;
     transition: .3s all;
 }
@@ -533,7 +533,7 @@ section {
 .footer_col p {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     font-weight: 300;
     color: #ffffff;
     margin-bottom: 10px;
@@ -631,11 +631,11 @@ section {
 }
 .carousel_item p {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 300;
     color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .carousel_banner .carousel-indicators {
     bottom: 40px;
@@ -2605,7 +2605,7 @@ span.org_color {
     font-size: 32px;
     line-height: 30px;
     height: 30px;
-    font-weight: 200;
+    font-weight: 300;
     color: #000000;
     cursor: pointer;
 }
@@ -3017,7 +3017,7 @@ p.prepaid_txt {
 .solidR_btn {
     font-size: 14px;
     line-height: 22px;
-    font-weight: 300;
+    font-weight: 400;
     color: #ffffff;
     padding: 9px 20px;
     border-radius: 1px;
@@ -3106,7 +3106,7 @@ p.prepaid_txt {
 }
 .privacy_policy p {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     font-weight: 300;
     color: #000000;
     margin-top: 0;

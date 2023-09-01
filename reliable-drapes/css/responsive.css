@@ -839,9 +839,6 @@
 .popup_input {
     height: 60px;
 }
-.search_popup {
-    top: -10px;
-}
 .popup_input > span {
     font-size: 23px;
     top: 1px;
