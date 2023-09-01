@@ -2382,7 +2382,7 @@ section {
 .cartSec_112 {
     width: 380px;
     flex-shrink: 0;
-    padding-top: 39px;
+    padding-top: 43px;
 }
 .cartSec_2 ul {
     width: 100%;
@@ -2427,6 +2427,7 @@ section {
 .proCont2 {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     margin-bottom: 15px;
@@ -2521,7 +2522,6 @@ section {
 .headSec_4 {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 30px;
 }
 .headSec_4 a {
     width: 100%;
@@ -2532,6 +2532,7 @@ section {
     padding: 20px;
     border: 2px dashed #dddddd;
     border-radius: 2px;
+    margin-top: 30px;
 }
 .headSec_5 h6 {
     font-weight: 400;
@@ -2712,16 +2713,19 @@ span.org_color {
 }
 .sameAsShip_box {
     width: 100%;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 .sameAs_ship {
     font-size: 14px;
     line-height: 22px;
     color: #000000;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 .show_btn {
     display: none;
+}
+.sameAsShip_box .solidB_btn {
+    margin-top: 15px;
 }
 .edit_buttons {
     position: absolute;
@@ -2789,6 +2793,9 @@ span.org_color {
 .addNew_add span {
     font-weight: 200;
     font-size: 23px;
+}
+.addSec_2 {
+    margin-top: 20px;
 }
 .addSec_21 {
     width: 100%;
@@ -2997,6 +3004,7 @@ span.org_color {
     margin-bottom: 15px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .paymentSec_21 ul li img {
     width: 70px;
