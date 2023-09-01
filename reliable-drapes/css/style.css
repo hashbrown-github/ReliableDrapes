@@ -332,8 +332,8 @@ section {
     background: unset;
     width: 100%;
     height: 100%;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 20px;
     color: #000000;
 }
 .popup_input > span {
@@ -387,9 +387,10 @@ section {
     line-height: 1;
 }
 .searchbar_dropdown_header ul li p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 20px;
     color: #000000;
+    font-weight: 300;
     margin-bottom: 0;
 }
 .searchbar_dropdown_header ul li.active, .searchbar_dropdown_header ul li:hover {
