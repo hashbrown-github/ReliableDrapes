@@ -1329,6 +1329,12 @@
 .prodtl_3 {
     margin-top: 15px;
 }
+.detail_tabs .nav-tabs .nav-link {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 15px;
+    padding-top: 0;
+}
 }
 @media (max-width: 400px) { 
 .carousel_item img {
@@ -1355,10 +1361,6 @@
 }
 .features_list ul li {
     width: calc(50% - 7.5px);
-}
-.detail_tabs .nav-tabs .nav-link {
-    padding: 10px 18px;
-    padding-top: 0;
 }
 .footer_btns {
     justify-content: center;
@@ -1452,9 +1454,7 @@
     line-height: 26px;
 }
 .detail_tabs .nav-tabs .nav-link {
-    font-size: 15px;
-    line-height: 20px;
-    padding: 8px 14px;
+    padding: 8px 10px;
     padding-top: 0;
 }
 .cartSec_1 {
@@ -1494,5 +1494,10 @@
 .addSave_btns {
     gap: 10px;
     flex-direction: column;
+}
+}
+@media (max-width: 330px) { 
+.detail_tabs .nav-tabs .nav-link {
+    font-size: 14px;
 }
 }
