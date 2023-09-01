@@ -81,7 +81,7 @@ section {
     display: inline-block;
 }
 .outer_main {
-    min-height: calc(100vh - 494px);
+    min-height: calc(100vh - 551px);
 }
 /*======= RADIO BTN START =======*/
 .contain_box {
@@ -2354,7 +2354,7 @@ section {
     margin-bottom: 15px;
 }
 .empty_sec h5 {
-    font-weight: 434;
+    font-weight: 500;
     font-size: 22px;
     line-height: 28px;
     color: #000000;
@@ -3109,6 +3109,9 @@ p.prepaid_txt {
 .privacy_policy p a {
     color: #D05335;
 }
+.privacy_policy p:last-of-type {
+    margin-bottom: 0;
+}
 /*======= PRIVACY POLICY END ========*/
 /*======== CONTACT US START =========*/
 .contact_head {
@@ -3169,3 +3172,88 @@ p.prepaid_txt {
     color: #FF0000;
 }
 /*========= CONTACT US END ==========*/
+/*========= ABOUT US START ==========*/
+.aboutus_sec {
+    width: 100%;
+    background: url('../images/about-banner-img.jpg')no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 120px 0;
+}
+.aboutus_sec2 {
+    width: 100%;
+    padding: 80px 0;
+}
+.aboutus_sec20 {
+    width: 100%;
+}
+.aboutus_sec20 h3, .aboutus_sec30 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.aboutus_sec20 p, .aboutus_sec30 p, .aboutus_sec312 li p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.aboutus_sec20 p:last-of-type, .aboutus_sec312 li p:last-of-type {
+    margin-bottom: 0;
+}
+.aboutus_sec20 p:first-of-type {
+    font-weight: 500;
+    border-left: 3px solid #D05335;
+    padding-left: 15px;
+}
+.aboutus_sec3 {
+    padding: 80px 0;
+    background-color: #FBFBFD;
+}
+.aboutus_sec30 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.aboutus_sec30 p {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.aboutus_sec31 {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+.aboutus_sec311, .aboutus_sec312 {
+    width: calc(50% - 30px);
+}
+.aboutus_sec311 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.aboutus_sec312 ul li:not(:last-child) {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.aboutus_sec312 li h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+.head_border {
+    width: 70px;
+    border-bottom: 2px solid #D05335;
+    margin-bottom: 15px;
+    display: block;
+}
+/*========== ABOUT US END ===========*/
