@@ -619,7 +619,7 @@
 }
 .sort_sortBy ul {
     top: unset;
-    bottom: 46px;
+    bottom: 48px;
     padding-top: 0;
     border: 1px solid #f1f0f0;
     box-shadow: unset;
@@ -691,6 +691,12 @@
     padding: 12px;
     border-top: 1px solid #f1f0f0;
     border-right: 1px solid #f1f0f0;
+}
+.close_btns button:nth-child(2) {
+    color: #ffffff;
+    background-color: #D05335;
+    border-top: 1px solid #D05335;
+    border-right: 0;
 }
 /*======= FILTERS END ========*/
 .products_sec2 {
@@ -843,7 +849,7 @@
     font-size: 23px;
     top: 1px;
 }
-.searchbar_dropdown_header ul li {
+/* .searchbar_dropdown_header ul li {
     padding: 12px 25px;
     padding-top: 11px;
     padding-left: 45px;
@@ -851,7 +857,7 @@
 .searchbar_dropdown_header li:before {
     top: 13px;
     left: 17px;
-}
+} */
 .subscribe_sec1 {
     max-width: 460px;
 }

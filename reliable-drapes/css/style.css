@@ -19,6 +19,231 @@
     font-weight: normal;
     font-style: normal;
 }
+/*======= OWL CAROUSEL CSS START =======*/
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+ .owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+} 
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+} 
+.owl-carousel .owl-stage {
+    position: relative;
+    touch-action: pan-Y;
+    -ms-touch-action: pan-Y;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+} 
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+} 
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+} 
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+} 
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+} 
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+} 
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: none;
+} 
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel.owl-loading {
+    opacity: 0;
+    display: block;
+} 
+.owl-carousel.owl-hidden {
+    opacity: 0;
+} 
+.owl-carousel.owl-refresh .owl-item {
+    visibility: hidden;
+} 
+.owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+} 
+.owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab;
+} 
+.owl-carousel.owl-rtl {
+    direction: rtl;
+} 
+.owl-carousel.owl-rtl .owl-item {
+    float: right;
+} 
+.owl-carousel .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+    z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+    z-index: 1;
+}
+.owl-carousel .fadeOut {
+    animation-name: fadeOut;
+}
+@keyframes fadeOut {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+.owl-height {
+    transition: height .5s ease-in-out;
+}
+.owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d;
+}
+.owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000;
+}
+.owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url('owl.video.play.png') no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform .1s ease;
+}
+.owl-carousel .owl-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
+.owl-carousel .owl-video-playing .owl-video-play-icon, .owl-carousel .owl-video-playing .owl-video-tn {
+    display: none;
+} 
+.owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity .4s ease;
+} 
+.owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+/*======== OWL CAROUSEL CSS END =========*/
+/*========== MAGNIFY CSS START ==========*/
+html.magnifying > body {
+    overflow-x: hidden !important;
+}
+.magnify,
+.magnify > .magnify-lens,
+.magnify-mobile,
+.lens-mobile { /* Reset */
+  min-width: 0;
+  min-height: 0;
+  animation: none;
+  border: none;
+  float: none;
+  margin: 0;
+  opacity: 1;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-indent: 0;
+  transform: none;
+  transition: none;
+}
+.magnify {
+  position: relative;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  display: inline-block;
+  z-index: inherit;
+}
+.magnify > .magnify-lens { /* Magnifying lens */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  cursor: none;
+  display: none;
+  z-index: 99;
+}
+.magnify > .magnify-lens.loading {
+  background: #333 !important;
+  opacity: 0.8;
+}
+.magnify > .magnify-lens.loading:after { /* Loading text */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  letter-spacing: 1px;
+  margin-top: -8px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.8);
+  text-transform: none;
+}
+/*========= MAGNIFY CSS END ===========*/
 body {
     position: relative;
     -webkit-font-smoothing: auto;
@@ -345,12 +570,12 @@ section {
 .searchbar_dropdown_header {
     width: 100%;
     border-top: 1px solid #dddddd;
-    padding: 10px 0;
+    padding-bottom: 10px;
     padding-right: 8px;
     box-shadow: 0 10px 10px rgb(0 0 0 / 7%);
 }
 .searchbar_dropdown_header .scroll_list {
-    max-height: 330px;
+    max-height: 320px;
     overflow: auto;
     padding-right: 8px;
 }
@@ -369,13 +594,16 @@ section {
 }
 .searchbar_dropdown_header ul li {
     width: 100%;
-    padding: 8px 30px;
-    padding-top: 7px;
-    padding-left: 50px;
+    padding: 10px 30px;
+    /* padding-left: 50px; */
     position: relative;
     transition: .3s all;
+    border-bottom: 1px solid #f1f1f1;
 }
-.searchbar_dropdown_header li:before {
+.searchbar_dropdown_header ul li:last-child {
+    border-bottom: 0;
+}
+/* .searchbar_dropdown_header li:before {
     position: absolute;
     top: 11px;
     left: 20px;
@@ -385,7 +613,7 @@ section {
     font-style: normal;
     font-size: 21px;
     line-height: 1;
-}
+} */
 .searchbar_dropdown_header ul li p {
     font-size: 15px;
     line-height: 26px;
@@ -858,11 +1086,11 @@ section {
     line-height: 18px;
     color: #000000;
     width: 100%;
-    height: 31px;
+    height: 32px;
     position: absolute;
     top: 0;
     right: 0;
-    padding: 3px 35px 5px 15px;
+    padding: 5px 35px 5px 15px;
     border: 0;
     outline: 0;
     border-radius: 2px;
@@ -1034,7 +1262,13 @@ section {
 .productsList_box li {
     width: calc(20% - 24px);
     background: #ffffff;
+    /* box-shadow: 0 2px 15px rgb(0 0 0 / 7%); */
+    border: 1px solid #dddddd;
+}
+.productsList_box li:hover {
+    transition: .2s all;
     box-shadow: 0 2px 15px rgb(0 0 0 / 7%);
+    border-color: transparent;
 }
 .img_box {
     width: 100%;
@@ -1212,7 +1446,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 0;
+    border: 1px solid #dddddd;
 }
 .dotProduct.active img {
     border: 1px solid #D05335;
@@ -1800,8 +2034,8 @@ section {
     width: 100%;
     padding: 20px;
     background-color: #ffffff;
-    /* border: 1px solid #dddddd; */
-    box-shadow: 0 2px 15px rgb(0 0 0 / 7%);
+    border: 1px solid #dddddd;
+    /* box-shadow: 0 2px 15px rgb(0 0 0 / 7%); */
 }
 .detail_tabs .tab-content p {
     font-size: 14px;
@@ -1820,9 +2054,9 @@ section {
     width: 100%;
     padding: 20px;
     background-color: #ffffff;
-    /* border: 1px solid #dddddd; */
+    border: 1px solid #dddddd;
     margin-top: 30px;
-    box-shadow: 0 2px 15px rgb(0 0 0 / 7%);
+    /* box-shadow: 0 2px 15px rgb(0 0 0 / 7%); */
     position: relative;
 }
 .rat_review1 {
@@ -1856,6 +2090,8 @@ section {
 }
 .rat_review11 h4 i {
     font-size: 24px;
+    position: relative;
+    top: -3px;
 }
 .rat_review11 p {
     font-weight: 500;
@@ -3149,12 +3385,12 @@ p.prepaid_txt {
     font-weight: 300;
     color: #000000;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .privacy_policy p b {
     font-weight: 600;
 }
-.privacy_policy p a {
+.privacy_policy p a, .privacy_policy p span {
     color: #D05335;
 }
 .privacy_policy p:last-of-type {
