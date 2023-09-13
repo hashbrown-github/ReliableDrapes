@@ -8,9 +8,6 @@
 <link rel="icon" type="img/png" sizes="32x32" href="images/favicon.png" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.css">
-<link rel='stylesheet' href='https://thdoan.github.io/magnify/css/magnify.css'>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/responsive.css" />
@@ -115,7 +112,7 @@
                         <a href="#"><span class="material-symbols-outlined">shopping_cart</span><span>Orders</span></a>
                       </li>
                       <li>
-                        <a href="watchlist.html"><span class="material-symbols-outlined">favorite_border</span><span>Wishlist</span></a>
+                        <a href="wishlist.html"><span class="material-symbols-outlined">favorite_border</span><span>Wishlist</span></a>
                       </li>
                       <li>
                         <a href="#"><span class="material-symbols-outlined">card_giftcard</span><span>Coupons</span></a>
@@ -150,8 +147,8 @@
         <div class="product_dtl11">
           <div class="productSliderMain">
             <div class="owl-carousel owl-theme" id="productSlider">
-              <a href="images/slider-img4.jpg" class="productImageDetail">
-                <img class="showImage zoom" src="images/slider-img4.jpg" alt="Curtains" />
+              <a href="images/product-1.jpg" class="productImageDetail">
+                <img class="showImage zoom" src="images/product-1.jpg" alt="Curtains" />
               </a>
               <a href="images/slider-img2.jpg" class="productImageDetail">
                 <img class="showImage zoom" src="images/slider-img2.jpg" alt="Curtains" />
@@ -165,7 +162,7 @@
             </div>
             <div class="productSlideInner">
               <div class="dotProduct active">
-                <img src="images/slider-img4.jpg" alt="Curtains" />
+                <img src="images/product-1.jpg" alt="Curtains" />
               </div>
               <div class="dotProduct">
                 <img src="images/slider-img2.jpg" alt="Curtains" />
@@ -179,7 +176,7 @@
             </div>
             <div class="product_images">
               <span class="material-symbols-outlined">open_in_full</span>
-              <img src="images/slider-img4.jpg" alt="Curtains" />
+              <img src="images/product-1.jpg" alt="Curtains" />
               <img src="images/slider-img2.jpg" alt="Curtains" />
               <img src="images/slider-img3.jpg" alt="Curtains" />
               <img src="images/slider-img4.jpg" alt="Curtains" />
@@ -620,8 +617,7 @@
           <ul>
             <li><a href="home.html"><p>Home</p></a></li>
             <li><a href="about-us.html"><p>About Us</p></a></li>
-            <!-- <li><a href="contact-us.html"><p>Contact Us</p></a></li> -->
-            <li><a href="#"><p>Blog</p></a></li>
+            <li><a href="https://blog.reliable-drapes.com/" target="_blank"><p>Blog</p></a></li>
           </ul>
         </div>
         <div class="footer_col footer_col3">
@@ -629,6 +625,7 @@
           <ul>
             <li><a href="privacy-policy.html"><p>Privacy Policy</p></a></li>
             <li><a href="terms-of-use.html"><p>Terms of Use</p></a></li>
+            <li><a href="#"><p>Help Center</p></a></li>
           </ul>
         </div>
         <div class="footer_col footer_col4">
@@ -646,12 +643,6 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.1.2/js/star-rating.min.js" integrity="sha512-BjVoLC9Qjuh4uR64WRzkwGnbJ+05UxQZphP2n7TJE/b0D/onZ/vkhKTWpelfV6+8sLtQTUqvZQbvvGnzRZniTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-  $(document).ready(function() {
-  $('#rateMe1').mdbRate();
-});
-</script>
 <!--===== FIXED HEADER =====-->
 <script>
 $(window).scroll(function() {    // this will work when your window scrolled.
@@ -687,10 +678,12 @@ $(window).scroll(function() {    // this will work when your window scrolled.
       animateOut: 'fadeOut',
       touchDrag: false,
       mouseDrag: false,
+      dots: false,
+      nav: false,
       responsive: {
         0: {
           items: 1,
-          nav: true
+          nav: false
         },
         600: {
           items: 1,
@@ -698,7 +691,7 @@ $(window).scroll(function() {    // this will work when your window scrolled.
         },
         1000: {
           items: 1,
-          nav: true,
+          nav: false,
           loop: false,
           margin: 0
         }
@@ -715,13 +708,12 @@ $(window).scroll(function() {    // this will work when your window scrolled.
       $(this).addClass('active');
     });
   })
-
 </script>
 <script src="js/img-previewer.min.js"></script>
 <script>
-  const a = new ImgPreviewer('.product_images', {
-    scrollbar: true
-  })
+const a = new ImgPreviewer('.product_images', {
+  scrollbar: true
+})
 </script>
 <!-- END productSlider -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.8.0/jquery.raty.min.js"></script>
