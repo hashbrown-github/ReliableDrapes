@@ -133,6 +133,12 @@
         <div class="m-stack m-stack--ver m-stack--desktop">
           <div class="m-stack__item m-brand m-brand-new eikaebana-logo">
             <div class="m-stack m-stack--ver m-stack--general"><a href="../../index.html" class="logo-wrapper"> <img alt="Eikaebana logo" src="images/logo.svg"></a> </div>
+            <div class="right_btn">
+              <button type="button" class="show_sideBar" id="hide_sidebar">
+                <span class="material-icons menu_btn">menu</span>
+                <span class="material-icons close_icon">close</span>
+              </button>
+            </div>
           </div>
           <div class="head-border">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header__section">
@@ -171,7 +177,7 @@
     </header>
     <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
       <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"> <i class="las la-close"></i> </button>
-      <div id="m_aside_left" class="m-grid__item	m-aside-left vendor-skin-light savoline_sidebar">
+      <div id="m_aside_left" class="m-grid__item	m-aside-left vendor-skin-light savoline_sidebar md_mainSidebar">
         <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--submenu-skin-dark" data-menu-vertical="true" data-menu-scrollable="false" data-menu-dropdown-timeout="500">
           <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
             <li class="m-menu__item sidebar_list" aria-haspopup="true">
@@ -315,69 +321,72 @@
             
           
               <div class="m-section__content">
-                <table class="table m-table product_table">
-                  <thead class="table_header">
-                    <tr>
-                      <!-- <th scope="col" width="5%"> 
-                        <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                          <input type="checkbox">
-                          <span></span> 
-                        </label>
-                      </th> -->
-                      <th scope="col" width="40%">Name</th>
-                      <th scope="col" width="40%">Status</th>
-                    <th scope="col" width="20%">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody class="table_bg">
-                    <tr>
-                      <!-- <td>
-                        <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                          <input type="checkbox">
-                          <span></span> 
-                        </label>
-                      </td> -->
-                      
-                      
-                      <td><a href="">Curtain , Bedsheet ,Towels</a></td> 
-                      <td style="color: #18a718;">
-                  Active
-                      </td>
-                    <td>
-    <a href="edit-variant.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-                        <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                        
-                      </a></td></tr>
-                    <tr>
-                   
-                      
-                      <td><a href="">Curtain , Bedsheet ,Towels</a></td> 
-              
-                      <td style="color: #ad1123;">
-                  Disabled
-                      </td>
-                    <td>
-            <a href="edit-variant.html">  
-              <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-                        <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                        
-                      </a></td></tr>
-                    <tr>
-                      
-                      
-                      <td><a href="">Curtain , Bedsheet ,Towels</a></td> 
-                      
-                      <td style="color: #18a718;">
-                  Active
-                      </td>
-                    <td>
-    <a href="edit-variant.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-                        <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                        
-                      </a></td>
+                <div class="subscrip_table">
+                  <table class="table m-table product_table">
+                    <thead class="table_header">
+                      <tr>
+                        <!-- <th scope="col" width="5%"> 
+                          <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                            <input type="checkbox">
+                            <span></span> 
+                          </label>
+                        </th> -->
+                        <th scope="col" width="40%">Name</th>
+                        <th scope="col" width="40%">Status</th>
+                      <th scope="col" width="20%">Action</th>
                       </tr>
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody class="table_bg">
+                      <tr>
+                        <!-- <td>
+                          <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                            <input type="checkbox">
+                            <span></span> 
+                          </label>
+                        </td> -->
+                        
+                        
+                        <td><a href="">Curtain , Bedsheet ,Towels</a></td> 
+                        <td style="color: #18a718;">
+                    Active
+                        </td>
+                      <td>
+      <a href="edit-variant.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                          <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                          
+                        </a></td></tr>
+                      <tr>
+                     
+                        
+                        <td><a href="">Curtain , Bedsheet ,Towels</a></td> 
+                
+                        <td style="color: #ad1123;">
+                    Disabled
+                        </td>
+                      <td>
+              <a href="edit-variant.html">  
+                <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                          <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                          
+                        </a></td></tr>
+                      <tr>
+                        
+                        
+                        <td><a href="">Curtain , Bedsheet ,Towels</a></td> 
+                        
+                        <td style="color: #18a718;">
+                    Active
+                        </td>
+                      <td>
+      <a href="edit-variant.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                          <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                          
+                        </a></td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+             
               </div>
             </div>
           </div>
@@ -392,7 +401,39 @@
   <script src="js/scripts.bundle.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/jquery.min.js" type="text/javascript"></script>
-
+  <script>
+    document.querySelector('.show_sideBar').addEventListener('click', function(event) {
+      event.preventDefault();
+      var target1 = document.querySelector('.md_mainSidebar');
+      var target2 = document.querySelector('.show_sideBar');
+      if (target1.classList.contains('open')) {
+        target1.classList.remove('open');
+      } 
+      else {
+        target1.classList.add('open');
+      }
+      if (target2.classList.contains('close_btn')) {
+        target2.classList.remove('close_btn');
+      } 
+      else {
+        target2.classList.add('close_btn');
+      }
+    });
+    
+    $('.close_btn').click(function (evt) {
+      evt.stopPropagation();
+      $('.md_mainSidebar').removeClass('open');
+      $(this).removeClass('close_btn');
+    });
+  
+    $('body,html').click(function (e) {
+      var container = $('.md_mainSidebar , .show_sideBar');
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.removeClass('open');
+        container.removeClass('close_btn');
+      }
+    });
+  </script>
   <script type="text/javascript">
     $("#checkbnox1").hide();
     $(".checkbox").click(function () {
