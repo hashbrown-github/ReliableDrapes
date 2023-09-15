@@ -790,13 +790,16 @@ section {
 .footer_socialMedia li:first-child {
     margin-left: 0;
 }
-.footer_socialMedia li i {
+/* .footer_socialMedia li i {
     font-size: 20px;
     vertical-align: middle;
     color: #ffffff;
 }
 .footer_socialMedia li:not(:first-child) i {
     font-size: 22px;
+} */
+.footer_socialMedia li Img {
+    width: 22px;
 }
 .footer_col4 p {
     display: flex;
@@ -961,14 +964,24 @@ section {
 .bg_red {
     background-color: #FF6261;
 }
+.rat_review11 h4 img {
+    object-fit: cover;
+    width: 27px;
+    height: 24px;
+    position: relative;
+    top: -2px;
+}
 .col_green {
     color: #388E3C;
-}
-.col_yellow {
-    color: #FF9E02;
+    object-position: left;
 }
 .col_red {
     color: #FF6261;
+    object-position: center;
+}
+.col_yellow {
+    color: #FF9E02;
+    object-position: right;
 }
 .col_lightY {
     color: #FCD261;
@@ -1300,6 +1313,9 @@ section {
 }
 .addTo_fav .fa-solid {
     color: #FF5B5B;
+}
+.addTo_fav img {
+    width: 20px;
 }
 .content_box h4 {
     font-weight: 500;
@@ -1701,7 +1717,7 @@ section {
     border-radius: 3px;
     padding: 3px 6px;
     justify-content: center;
-    min-width: 38px;
+    min-width: 36px;
 }
 .rating_box span {
     font-weight: 400;
@@ -1710,6 +1726,11 @@ section {
 }
 .rating_box i {
     font-size: 10px;
+    position: relative;
+    top: -1px;
+}
+.rating_box img {
+    width: 10px;
     position: relative;
     top: -1px;
 }
@@ -1874,7 +1895,10 @@ section {
 }
 .prodtl_5 > button i {
     font-size: 23px;
-    color: #c2c2c2;
+    color: #000000;
+}
+.prodtl_5 > button img {
+    width: 21px;
 }
 .prodtl_6 {
     width: 100%;
@@ -2751,11 +2775,15 @@ section {
 .proCont4 button span {
     font-size: 23px;
     font-weight: 300;
-    color: #555555;
+    color: #000000;
 }
 .proCont4 button i {
     font-size: 17px;
-    color: #555555;
+    color: #000000;
+    margin-right: 4px;
+}
+.proCont4 button img {
+    width: 17px;
     margin-right: 4px;
 }
 .headSec_3 {
@@ -4061,3 +4089,29 @@ button.makeDef_btn {
     padding: 10px 20px;
 }
 /*=========== MANAGE ACCOUNT END ============*/
+/*============ SITEMAP CSS START ============*/
+.links_list h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.links_list li a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+.links_list li:last-child a {
+    margin-bottom: 0;
+}
+.links_list li:hover, .links_list li:hover a {
+    color: #D05335;
+}
+/*============= SITEMAP CSS END =============*/
