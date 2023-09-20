@@ -1,173 +1,178 @@
 @charset "UTF-8";
 /* CSS Document */
-
 @media (max-width: 1920px) {
-.eikaebana_body, .main_header , footer .admin_footer {
+.eikaebana_body, .main_header, footer .admin_footer {
     width: 100%;
     float: left;
 }
-}
+}   
 @media (max-width: 1920px) {
 .add_NewCoupon2 {
-
     right: 15px;
-
 }
 }
 @media (max-width: 1366px) {
-    .users .form_model {
-
-        transform: translate(-50%, 20%);
-    }
-
-    .brands_drop span.Left_3 {
-        width: 36%;
-    }
-    .brands_drop span.Left_2 {
-        width: 37%;
-    }
-    a.navbar-brand img {left: 41%;top: 70px;}
-    .profile_header2 {
-        position: relative;
-    }
-    .detail_list1 {
-        width: 72%;
-    }
-    .detail_list2 {
-        width: 28%;
-    }
-    .Order_Status1 {
-        width: 20%;
-
-    }
-    .Order_Status1 {
-        width: 33%;
-        margin-left: 0px;
-    }
-    .payment_status {width: 30%;}
-    .Order_Detail1 {
-        width: 30%;
-    }
-
-    .Order_Status1 .status_drop {
-        margin-bottom: 0px;
-        display: flex;
-    }
-    .orderList_box2 {
-
-        right: 14px;
-        max-width: 24%;
-    }
-
+.users .form_model {
+    transform: translate(-50%, 20%);
+}
+.brands_drop span.Left_2 {
+    width: 37%;
+}
+a.navbar-brand img {
+    left: 41%;
+    top: 70px;
+}
+.profile_header2 {
+    position: relative;
+}
+.detail_list1 {
+    width: 72%;
+}
+.detail_list2 {
+    width: 28%;
+}
+.Order_Status1 {
+    width: 20%;
+}
+.Order_Status1 {
+    width: 33%;
+    margin-left: 0px;
+}
+.payment_status {
+    width: 30%;
+}
+.Order_Detail1 {
+    width: 30%;
+}
+.Order_Status1 .status_drop {
+    margin-bottom: 0px;
+    display: flex;
+}
+.orderList_box2 {
+    right: 14px;
+    max-width: 24%;
 }
 
+}
 @media (max-width: 1199px) {
-    .add_NewCoupon2 {
-        right: 0;
-    }
+.add_NewCoupon2 {
+    right: 0;
+}
 }
 @media (max-width: 992px) {
-   
-    .md_mainSidebar.open {
-        left: 0;
+    .alert {
+        display: none;
     }
-    .right_btn button span {
-
-        display: block;
-
-    }
-    .subscrip_table {
-        overflow-x: auto;
-    }
-    .subscrip_table table {
-        width: 860px;
-        max-width: 860px;
-    }
+.md_mainSidebar.open {
+    left: 0;
 }
-@media (max-width: 991px) {
-    .m-stack.m-stack--general {
+.head-border {
+    width: calc(100% - 250px);
+    padding: 0;
+}
+.header_icons .header__list .header_icons_set {
+    padding: 0;
+}
+.head-border .header__section {
+    padding: 0;
+}
+.subscrip_table {
+    overflow-x: auto;
+}
+.subscrip_table table {
+    width: 860px;
+    max-width: 860px;
+}
+.header__section .search_div {
+    width: calc(100% - 100px);
+}
+.right_btn {
+    display: block;
+}
+.header_searchIcon {
+    display: block;
+}
+.m-stack.m-stack--general {
 
-        justify-content: left;
-    }
-    .m-body .m-wrapper {
-        margin-left: 0;
-    }
-    .header__section .search_div {
-
-        position: relative;
-        bottom: 64px;
-        left: 127px;
-    }
-    .header_icons .header__list {
-        position: relative;
-        bottom: 56px;
-        left: -33px;
-    }
-    .header__section .header_icons {
-        padding: 0;
-    }
-    .eikaebana-logo img {
-        width: 90px;
-    }
-    .order__head {
-        margin-top: 30px;
-    }
+    justify-content: left;
+}
+.m-body .m-wrapper {
+    margin-left: 0;
+}
+.header__section .header_icons {
+    padding: 0;
+}
+.orderDetail_list ul {
+    flex-direction: column;
+}
+.orderDetail_list ul li p.order_id {
+    margin-bottom: 10px;
+}
+.icons__prop {
+    color: #000000;
+}
+.header_list_item {
+    color: #000000;
+}
+.m-aside-menu .m-menu__nav {
+    margin-top: 0;
+}
+.header_icons {
+    padding: 10px;
+}
 }
 @media (max-width: 767px) {
-    .Size--list .download_drop {
-        padding: 5px 14px;
-        width: 120px;
-    }
-    .show_details ul li {
+    .orderList_box {
         width: 100%;
     }
-    .show_details ul {
-  
-        flex-direction: column;
-    }
-    .SaveProduct_button {
-        margin-top: 0;
-    }
-    .btn_cancel {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .btn_SavePro {
-        margin-top: 0;
-    }
-    .SaveProduct_button {
-        margin-top: 0;
-    }
-    ul.editVariantList {
-        padding-left: 0;
-    }
-
-    .Right_side_input.ex_position {
-        margin-bottom: 10px;
-    }
-    .edit_variantsSec {
-        flex-wrap: wrap;
-    }
-    .variant_listType {
-        width: 100%;
-        padding-right: 0;
-    }
-    .brands_drop span.Left_1 {
-        width: 33.33%;
-    }
-    .serching__bar div span.Left_2 {
-        width: 100%;
-    }
-    .brands_drop span.Left_3 {
-        width: 33.33%;
-    }
-    .OrderList__heading {
-        margin-top: 30px;
-    }
-    
-    .eikaebana-logo img {
-        width: 90px;
-    }
+.background_box {
+    padding: 20px;
+}
+.Size--list .download_drop {
+    padding: 5px 14px;
+    width: 120px;
+}
+.show_details ul li {
+    width: 100%;
+}
+.show_details ul {
+    flex-direction: column;
+}
+.SaveProduct_button {
+    margin-top: 0;
+}
+.btn_cancel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn_SavePro {
+    margin-top: 0;
+}
+.SaveProduct_button {
+    margin-top: 0;
+}
+ul.editVariantList {
+    padding-left: 0;
+}
+.Right_side_input.ex_position {
+    margin-bottom: 10px;
+}
+.edit_variantsSec {
+    flex-wrap: wrap;
+}
+.variant_listType {
+    width: 100%;
+    padding-right: 0;
+}
+.brands_drop span.Left_1 {
+    width: 15%;
+}
+.brands_drop span.Left_3 {
+    width: 20%;
+}
+.eikaebana-logo img {
+    width: 105px;
+}
 .bottom_footer_eikaebana p, .bottom_footer_eikaebana p a {
     text-align: center;
 }
@@ -182,12 +187,13 @@
     line-height: 38px;
     font-size: 28px;
 }
- .head-border {
-    float: unset;
-    display: none;
+.head-border {
+    width: calc(100% - 180px);
+}
+.header__section .search_div {
+    width: calc(100% - 85px);
 }
 .def_widthheading {
-
     margin-top: 30px;
 }
 .orderList_box2 {
@@ -208,17 +214,40 @@
 ul.ordered_List li:last-child {
     margin-bottom: 0;
 }
+.alert {
+    top: 0px;
+    right: -30%;
+}
+.m-body .m-content {
+    padding: 15px;
+}
+.OrderList__heading {
+    margin-bottom: 15px;
+}
 }
 @media (max-width: 600px) {
+.Price_detail {
+    width: 100%;
+    margin-top: 15px;
+}
+.Size--list .download_drop {
+    padding: 5px 12px;
+}
+.orderDetail_list ul {
+    margin-bottom: 15px;
+}
+.tracking_input {
+    flex-direction: column;
+}
+.tracking_input>div {
+    margin-top: 10px;
+}
 .form_model {
     width: 100%;
 }
-.header__section .header_icons {
-    padding: 0;
-    display: none;
-}
 .brands_drop {
     gap: 10px;
+    flex-wrap: wrap;
 }
 .def_width .dropbtn {
     padding: 4px;
@@ -233,11 +262,23 @@ ul.ordered_List li:last-child {
 .ordered_List {
     margin-bottom: 0;
 }
+.brands_drop span.Left_1, .brands_drop span.Left_3 {
+    width: 100%;
+}
+.serching__bar div span.Left_2 {
+    width: calc(50% - 5px);
+}
 }
 @media (max-width: 480px) {
-    .orderList_box h5 {
-     margin-bottom: 15px;
+    .tracking_input input {
+        min-width: 270px;
     }
+.background_box {
+    padding: 15px;
+}
+.orderList_box h5 {
+    margin-bottom: 15px;
+}
 .from__section {
     padding: 40px 0;
 }
@@ -254,13 +295,78 @@ ul.ordered_List li:last-child {
 .add_NewCoupon {
     padding: 20px;
 }
-.m-brand {
-    padding: 0px 10px;
+.Order_Detail i {
+    margin-right: 0;
+    margin-bottom: 20px;
 }
-
+.Order_Detail {
+    width: 100%;
+    flex-direction: column;
+}
+.Order_Status {
+    margin-top: 10px;
+}
+.Order_Detail p, .Order_Status p, .orderL_itm p {
+    margin-bottom: 2px;
+}
+.btn_SavePro {
+    min-width: unset;
+}
+.tracking_options {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.brands_drop {
+    flex-direction: column;
+}
+.brands_drop span.Left_3 {
+    width: 100%;
+}
+.serching__bar div span.Left_2 {
+    width: 100%;
+}
+}
+@media (max-width: 400px) {
+    .OrderList__heading {
+        flex-direction: column;
+    }
+.tracking_input input {
+    min-width: 240px;
+}
+.OrderList__heading {
+    align-items: baseline;
+    gap: 10px;
+}
+.orderDetail_list ul li p.order_id {
+    font-size: 20px;
+}
 }
 @media (max-width: 360px) {
-    .right_btn button span {
-        right: 0;
-    }
+.right_btn button span {
+    right: 0;
+}
+.tracking_input input {
+    min-width: unset;
+}
+.tracking_options {
+    align-items: unset;
+    flex-direction: column;
+}
+.orderDetail_list ul li p.order_id {
+    font-size: 20px;
+    line-height: 26px;
+}
+.header__section .search_div {
+    left: 128px;
+}
+.head-border {
+    width: unset;
+}
+.header__section .search_div {
+    left: 128px;
+    display: none;
+}
+.eikaebana-logo img {
+    width: 76px;
+}
 }
