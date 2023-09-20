@@ -26,23 +26,21 @@
             <div class="right_btn">
               <button type="button" class="show_sideBar" id="hide_sidebar">
                 <span class="material-icons menu_btn">menu</span>
-                <span class="material-icons close_icon">close</span>
               </button>
             </div>
-      
           </div>
           <div class="head-border">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header__section">
               <div class="search_div">
                 <div class="input__field"> <i class="las la-search Search_Icon"></i>
                   <input type="text" class="form-control" placeholder="Search for....">
-                  <a href="" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a>
+                  <a href="#" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a>
                 </div>
               </div>
               <div class="float-right header_icons">
                 <ul class="header__list">
                   <li class="header_icons_set"> <a href="#"><i class="lar la-bell icons__prop"></i></a></li>
-                  <li class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right header_icons_set" data-dropdown-toggle="hover" aria-expanded="true"> <span class="profile_visit"> <a href="#"> <span class="header_list_item">Admin <i class="las la-angle-down"></i> </span> </a></span>
+                  <li class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right header_icons_set" data-dropdown-toggle="hover" aria-expanded="true"> <span class="profile_visit"> <a href="javascript:void(0);"> <span class="header_list_item">Admin <i class="las la-angle-down"></i> </span> </a></span>
                     <div class="m-dropdown__wrapper"> <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 34.836px;"></span>
                       <div class="m-dropdown__inner">
                         <div class="m-dropdown__body">
@@ -253,25 +251,11 @@
       else {
         target1.classList.add('open');
       }
-      if (target2.classList.contains('close_btn')) {
-        target2.classList.remove('close_btn');
-      } 
-      else {
-        target2.classList.add('close_btn');
-      }
     });
-    
-    $('.close_btn').click(function (evt) {
-      evt.stopPropagation();
-      $('.md_mainSidebar').removeClass('open');
-      $(this).removeClass('close_btn');
-    });
-  
     $('body,html').click(function (e) {
       var container = $('.md_mainSidebar , .show_sideBar');
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         container.removeClass('open');
-        container.removeClass('close_btn');
       }
     });
   </script>

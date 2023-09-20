@@ -222,196 +222,279 @@
               <h1><button type="button"><i class="las la-arrow-left"></i></button>Add Product</h1>
             </div>
           </div>
-          <div class="orderList_box col-lg-10">
-            <div class="add_NewCoupon">
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <div class="input-field">
-                    <label>Name*</label>
-                    <div class="Right_side_input">
-                      <input type="text" class="form_control">
+          <div class="row">
+            <div class="orderList_box col-lg-9 col-md-9 col-sm-12 col-12">
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Name*</label>
+                      <div class="Right_side_input">
+                        <input type="text" class="form_control">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <div class="input-field">
-                    <label>Description</label>
-                    <div class="Right_side_input">
-                      <textarea rows="3" type="text" class="form_control"></textarea>
+  
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Description</label>
+                      <div class="Right_side_input">
+                        <textarea rows="3" type="text" class="form_control"></textarea>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <div class="input-field mb-0">
-                    <label>Image</label>
-                    <div class="Right_side_input">
-                      <div class="upload_files">
-                        <span class="input_files">
-                          <input type="file" multiple="">
-                        </span>
-                        <div class="inner_design">
-                          <span class="material-icons">arrow_circle_left</span>
-                          <button type="button">Add Images</button>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-field mb-0">
+                      <label>Image</label>
+                      <div class="Right_side_input">
+                        <div class="upload_files">
+                          <span class="input_files">
+                            <input type="file" multiple="">
+                          </span>
+                          <div class="inner_design">
+                            <span class="material-icons">arrow_circle_left</span>
+                            <button type="button">Add Images</button>
+                          </div>
+                        </div>
+                        <div class="upload_images" style="margin-top: 10px;">
+                          <ul>
+                            <li>
+                              <img src="images/mud-flowers.jpg" alt="Flowers">
+                              <div class="hover_divBox">
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <li>
+                              <img src="images/red-roses-img.jpg" alt="Flowers">
+                              <div class="hover_divBox">
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <li>
+                              <img src="images/purple-roses.jpg" alt="Flowers">
+                              <div class="hover_divBox">
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <li><img src="images/red-roses.jpg" alt="Flowers">
+                              <div class="hover_divBox">
+                                <button type="button"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="upload_files">
+                                <span class="input_files">
+                                  <input type="file" multiple="">
+                                </span>
+                                <div class="inner_design">
+                                  <span class="material-icons">arrow_circle_left</span>
+                                  <button type="button">Add Image</button>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <div class="upload_images" style="margin-top: 10px;">
-                        <ul>
-                          <li>
-                            <img src="images/mud-flowers.jpg" alt="Flowers">
-                            <div class="hover_divBox">
-                              <button type="button"><span class="material-icons delete_icon">close</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <h5>Pricing</h5>
+                </div>
+              </div>
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Selling Price (Incl. GST)*</label>
+                      <div class="Right_side_input price_cu">
+                        <span>Rs.</span>
+                        <input type="text" class="form_control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Discount (Incl. GST)*</label>
+                      <div class="Right_side_input weight_input">
+                        <div class="form_control">
+                          <input type="text">
+                          <select>
+                            <option selected="">Rs.</option>
+                            <option>%</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>HSN*</label>
+                      <div class="Right_side_input hsn_optionDrop">
+                        <input type="text" class="form_control" placeholder="5609 00 90">
+                        <div class="autocomplete-items" style="
+        display: none; ">
+                          <div><strong>56</strong>08 00 80<input type="hidden" value=""></div>
+                          <div><strong>56</strong>68 00 50<input type="hidden" value=""></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>GST%*</label>
+                      <div class="Right_side_input">
+                        <input type="text" class="form_control" placeholder="9%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-field mb-0">
+                      <label>Discounted Price (Incl. GST)</label>
+                      <div class="Right_side_input">
+                        <span>Rs. 200</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+         
+  
+  
+              <div class="row">
+                <div class="col-lg-12">
+                  <h5>Filters</h5>
+                </div>
+              </div>
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+  
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="input-field">
+                            <label>Design*</label>
+                            <div class="Right_side_input">
+                              <select class="Size--list">
+                                <option selected="">Option 1</option>
+                                <option>Option 2</option>
+                                <option>option 3</option>
+  
+                              </select>
                             </div>
-                          </li>
-                          <li>
-                            <img src="images/red-roses-img.jpg" alt="Flowers">
-                            <div class="hover_divBox">
-                              <button type="button"><span class="material-icons delete_icon">close</span></button>
-                            </div>
-                          </li>
-                          <li>
-                            <img src="images/purple-roses.jpg" alt="Flowers">
-                            <div class="hover_divBox">
-                              <button type="button"><span class="material-icons delete_icon">close</span></button>
-                            </div>
-                          </li>
-                          <li><img src="images/red-roses.jpg" alt="Flowers">
-                            <div class="hover_divBox">
-                              <button type="button"><span class="material-icons delete_icon">close</span></button>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="upload_files">
-                              <span class="input_files">
-                                <input type="file" multiple="">
-                              </span>
-                              <div class="inner_design">
-                                <span class="material-icons">arrow_circle_left</span>
-                                <button type="button">Add Image</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+  
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="input-field">
+                            <label>Opacity percentage*</label>
+                            <div class="Right_side_input">
+                              <div class="Right_side_input">
+                                <select class="Size--list">
+                                  <option selected="">Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>option 3</option>
+  
+                                </select>
                               </div>
                             </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <h5>Pricing</h5>
-              </div>
-            </div>
-            <div class="add_NewCoupon">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Selling Price (Incl. GST)*</label>
-                    <div class="Right_side_input price_cu">
-                      <span>Rs.</span>
-                      <input type="text" class="form_control">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Discount (Incl. GST)*</label>
-                    <div class="Right_side_input weight_input">
-                      <div class="form_control">
-                        <input type="text">
-                        <select>
-                          <option selected="">Rs.</option>
-                          <option>%</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>HSN*</label>
-                    <div class="Right_side_input hsn_optionDrop">
-                      <input type="text" class="form_control" placeholder="5609 00 90">
-                      <div class="autocomplete-items" style="
-      display: none; ">
-                        <div><strong>56</strong>08 00 80<input type="hidden" value=""></div>
-                        <div><strong>56</strong>68 00 50<input type="hidden" value=""></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>GST%*</label>
-                    <div class="Right_side_input">
-                      <input type="text" class="form_control" placeholder="9%">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="input-field mb-0">
-                    <label>Discounted Price (Incl. GST)</label>
-                    <div class="Right_side_input">
-                      <span>Rs. 200</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-       
-
-
-            <div class="row">
-              <div class="col-lg-12">
-                <h5>Filters</h5>
-              </div>
-            </div>
-            <div class="add_NewCoupon">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                        <div class="input-field">
-                          <label>Design*</label>
-                          <div class="Right_side_input">
-                            <select class="Size--list">
-                              <option selected="">Option 1</option>
-                              <option>Option 2</option>
-                              <option>option 3</option>
-
-                            </select>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                        <div class="input-field">
-                          <label>Opacity percentage*</label>
-                          <div class="Right_side_input">
-                            <div class="Right_side_input">
-                              <select class="Size--list">
-                                <option selected="">Option 1</option>
-                                <option>Option 2</option>
-                                <option>option 3</option>
-
+  
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>
+                        Washability*
+                      </label>
+                      <div class="Right_side_input">
+                        <div class="Right_side_input">
+                          <select class="Size--list">
+                            <option selected="">Option 1</option>
+                            <option>Option 2</option>
+                            <option>option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Type of stitching*</label>
+                      <div class="Right_side_input">
+                        <div class="Right_side_input">
+                          <select class="Size--list">
+                            <option selected="">Option 1</option>
+                            <option>Option 2</option>
+                            <option>option 3</option>
+  
+  
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <h5>Weight &amp; Size</h5>
+                </div>
+              </div>
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Weight*</label>
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="Right_side_input weight_input">
+                            <div class="form_control">
+                              <input type="text">
+                              <select>
+                                <option selected="">gm</option>
+                                <option>kg</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="input-field">
+                      <label>Vol. Weight</label>
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <div class="Right_side_input weight_input">
+                            <div class="form_control">
+                              <input type="text">
+                              <select>
+                                <option selected="">gm</option>
+                                <option>kg</option>
                               </select>
                             </div>
                           </div>
@@ -420,80 +503,34 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>
-                      Washability*
-                    </label>
-                    <div class="Right_side_input">
-                      <div class="Right_side_input">
-                        <select class="Size--list">
-                          <option selected="">Option 1</option>
-                          <option>Option 2</option>
-                          <option>option 3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Type of stitching*</label>
-                    <div class="Right_side_input">
-                      <div class="Right_side_input">
-                        <select class="Size--list">
-                          <option selected="">Option 1</option>
-                          <option>Option 2</option>
-                          <option>option 3</option>
-
-
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <h5>Weight &amp; Size</h5>
-              </div>
-            </div>
-            <div class="add_NewCoupon">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Weight*</label>
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="Right_side_input weight_input">
-                          <div class="form_control">
-                            <input type="text">
-                            <select>
-                              <option selected="">gm</option>
-                              <option>kg</option>
-                            </select>
+  
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="input-field">
+                      <label>Dimensions*</label>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                          <div class="Right_side_input ex_position">
+                            <input type="text" class="form_control" placeholder="L">
+                            <span>x</span>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Vol. Weight</label>
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="Right_side_input weight_input">
-                          <div class="form_control">
-                            <input type="text">
-                            <select>
-                              <option selected="">gm</option>
-                              <option>kg</option>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                          <div class="Right_side_input ex_position">
+                            <input type="text" class="form_control" placeholder="B">
+                            <span>x</span>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                          <div class="Right_side_input">
+                            <input type="text" class="form_control" placeholder="H">
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                          <div class="Right_side_input">
+                            <select class="Size--list">
+                              <option selected="">Inches</option>
+                              <option>cm</option>
                             </select>
                           </div>
                         </div>
@@ -502,379 +539,345 @@
                   </div>
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="input-field">
-                    <label>Dimensions*</label>
-                    <div class="row">
-                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="Right_side_input ex_position">
-                          <input type="text" class="form_control" placeholder="L">
-                          <span>x</span>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="Right_side_input ex_position">
-                          <input type="text" class="form_control" placeholder="B">
-                          <span>x</span>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="Right_side_input">
-                          <input type="text" class="form_control" placeholder="H">
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <div class="Right_side_input">
-                          <select class="Size--list">
-                            <option selected="">Inches</option>
-                            <option>cm</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <h5>Inventory</h5>
-              </div>
-            </div>
-            <div class="add_NewCoupon">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>SKU (Stock Keeping Unit)*</label>
-                    <div class="Right_side_input">
-                      <input type="text" class="form_control">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Barcode</label>
-                    <div class="Right_side_input">
-                      <input type="text" class="form_control">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>Stock Available*</label>
-                    <div class="Right_side_input">
-                      <input type="number" class="form_control" placeholder="">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="input-field">
-                    <label>MOQ (Min. Order Quantity)</label>
-                    <div class="Right_side_input">
-                      <input type="text" class="form_control">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row">
-              <div class="col-lg-12">
-                <h5>Variants</h5>
-              </div>
-            </div>
-
-            <div class="add_NewCoupon">
-              <div class="row">
-                <div class="col-md-12">
-            <div class="add_size">
-            <h5>Size
-              <a href="add-product.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button> </a>
-            
-            </h5>
-            <div class="inner_text">
-            <p>Large</p>
-            <p>Small</p>
-            </div>
-            </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="add_color">
-                    <h5>Color
-                      
-                    </h5>
-                    <div class="inner_text">
-                    <p>Red</p>
-                    <p>Blue</p>
-                    </div>
-                  </div>
-               
-                  </div>
-                </div>
-                <div class="variants_opt">
-                  <div class="vari_opt1">
-                    <h4>Preview</h4>
-                    
-                  </div>
-                  <div class="vari_opt5">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" width="10%">Variant</th>
-                          <th scope="col" width="10%">Image</th>
-                          <th scope="col" width="10%">Selling Price</th>
-                          <th scope="col" width="10%">Discount</th>
-                          <th scope="col" width="10%">Stock
-                            <button type="button" class="tooltip">
-                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                <input type="checkbox">
-                                <span></span>
-                              </label>
-                              <span class="tooltiptext">Keep Default Stock</span>
-                            </button>
-                          </th>
-                          <th scope="col" width="10%">Weight
-                            <button type="button" class="tooltip">
-                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                <input type="checkbox">
-                                <span></span>
-                              </label>
-                              <span class="tooltiptext">Keep Default Weight</span>
-                            </button>
-                          </th>
-                          <th scope="col" width="10%">Vol. Weight
-                            <button type="button" class="tooltip">
-                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                <input type="checkbox">
-                                <span></span>
-                              </label>
-                              <span class="tooltiptext">Keep Default Vol. Weight</span>
-                            </button>
-                          </th>
-
-
-                          <th scope="col" width="10%">SKU
-                            <button type="button" class="tooltip">
-                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                <input type="checkbox">
-                                <span></span>
-                              </label>
-                              <span class="tooltiptext">Keep Default SKU</span>
-                            </button>
-                          </th>
-                          
-                          <th scope="col" width="10%">MOQ
-                            <button type="button" class="tooltip">
-                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                <input type="checkbox">
-                                <span></span>
-                              </label>
-                              <span class="tooltiptext">Keep Default MOQ</span>
-                            </button>
-                            <!-- <button type="button" class="default">Keep default SKU</button> -->
-                          </th>
-                          <th scope="col" width="10%"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <p>Red / Curly / 5ft</p>
-                          </td>
-                          <td>
-                            <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
-                              <div class="variant_img">
-                                <img src="images/no-product-image.png" alt="Flowers">
-                              </div>
-                            </a>
-                          </td>
-                          <td>
-                              <div class="Right_side_input price_cu">
-                                <p>Rs.000</p>
-                              </div>
-                            
-                          </td>
-                          <td>
-                            
-                              <div class="Right_side_input weight_input">
-                                <p>Rs.000</p>
-                                <p>10%</p>
-                              </div>
-                          
-                          </td>
-                          <td>
-                            <div class="Right_side_input price_cu">
-                                <p>1</p>
-                           
-                              </div>
-                          </td>
-                          <td>
-                            <div class="Right_side_input weight_input">
-                                <p>10kg</p>
-                                <p>500gm</p>
-                              </div>
-                          </td>
-                          <td>
-                            <div class="Right_side_input weight_input">
-                                <p>10kg</p>
-                                <p>500gm</p>
-                              </div>
-                          </td>
-
-
-                          <td>
-                            <div class="Right_side_input price_cu">
-                                <p>1</p>
-                           
-                              </div>
-                            
-                          </td>
-                          <td>
-                            <div class="input-field mb-0">
-                              <div class="Right_side_input">
-                                <input type="text" class="form_control">
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                       <a href="edit-variant.html">  
-                       
-                        <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-
-                    <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                    
-                  </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p>Pink / Curly / 5ft</p>
-                          </td>
-                          <td>
-                            <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
-                              <div class="variant_img">
-                                <img src="images/no-product-image.png" alt="Flowers">
-                              </div>
-                            </a>
-                          </td>
-                          <td>
-                            <div class="Right_side_input price_cu">
-                              <p>Rs.000</p>
-                         
-                            </div>
-                          </td>
-                          <td>
-                            <div class="Right_side_input weight_input">
-                              <p>Rs.000</p>
-                              <p>10%</p>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="Right_side_input price_cu">
-                                <p>Rs.000</p>
-                           
-                              </div>
-                          </td>
-                          <td>
-                            <div class="Right_side_input weight_input">
-                                <p>10kg</p>
-                                <p>500gm</p>
-                              </div>
-                          </td>
-                          <td>
-                            <div class="Right_side_input weight_input">
-                                <p>10kg</p>
-                                <p>500gm</p>
-                              </div>
-                          </td>
-
-
-                          <td>
-                            <div class="Right_side_input price_cu">
-                                <p>1</p>
-                           
-                              </div>
-                          </td>
-                          <td>
-                            <div class="input-field mb-0">
-                              <div class="Right_side_input">
-                                <input type="text" class="form_control">
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                       <a href="edit-variant.html">  
-                        <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-                    <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                    
-                  </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+  
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="SaveProduct_button">
-                    <a href="#" class="btn_cancel">Draft</a>
-                    
-                    <a href="#" class="btn_SavePro ml-1" id="savebtn">Save Product</a>
-                    <a href="add-product-variant.html" class="btn_SavePro ml-1">Save and Add Variant</a>
-                  </div>
-                  <div class="alert alert-success alert-dismissible" id="hide">
-                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>Success!</strong> Indicates a successful or positive action.
-                </div>
+                  <h5>Inventory</h5>
                 </div>
               </div>
-            </div>
-         
-          </div>
-          <div class="orderList_box1 col-lg-4">
-            <div class="add_NewCoupon add_NewCoupon2">
-
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <div class="input-field">
-                    <label>Status*</label>
-                    <div class="Right_side_input">
-                      <select class="Size--list">
-                        <option selected="">Active</option>
-                        <option>Disabled</option>
-                        <option>Disabled</option>
-
-                      </select>
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="input-field">
+                      <label>SKU (Stock Keeping Unit)*</label>
+                      <div class="Right_side_input">
+                        <input type="text" class="form_control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="input-field">
+                      <label>Barcode</label>
+                      <div class="Right_side_input">
+                        <input type="text" class="form_control">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                  <div class="input-field">
-                    <label>Category*</label>
-                    <div class="Right_side_input">
-                      <select class="Size--list">
-                        <option selected="">Category 1</option>
-                        <option>Category 2</option>
-                        <option>Category 3</option>
-                        <option>Category 4</option>
-                        <option>Category 5</option>
-                      </select>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="input-field">
+                      <label>Stock Available*</label>
+                      <div class="Right_side_input">
+                        <input type="number" class="form_control" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="input-field">
+                      <label>MOQ (Min. Order Quantity)</label>
+                      <div class="Right_side_input">
+                        <input type="text" class="form_control">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               
-
-            </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <h5>Variants</h5>
+                </div>
+              </div>
+  
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-md-12">
+              <div class="add_size">
+              <h5>Size
+                <a href="add-product.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button> </a>
+              
+              </h5>
+              <div class="inner_text">
+              <p>Large</p>
+              <p>Small</p>
+              </div>
+              </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="add_color">
+                      <h5>Color
+                        
+                      </h5>
+                      <div class="inner_text">
+                      <p>Red</p>
+                      <p>Blue</p>
+                      </div>
+                    </div>
+                 
+                    </div>
+                  </div>
+                  <div class="variants_opt">
+                    <div class="vari_opt1">
+                      <h4>Preview</h4>
+                      
+                    </div>
+                    <div class="vari_opt5">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" width="10%">Variant</th>
+                            <th scope="col" width="10%">Image</th>
+                            <th scope="col" width="10%">Selling Price</th>
+                            <th scope="col" width="10%">Discount</th>
+                            <th scope="col" width="10%">Stock
+                              <button type="button" class="tooltip">
+                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                  <input type="checkbox">
+                                  <span></span>
+                                </label>
+                                <span class="tooltiptext">Keep Default Stock</span>
+                              </button>
+                            </th>
+                            <th scope="col" width="10%">Weight
+                              <button type="button" class="tooltip">
+                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                  <input type="checkbox">
+                                  <span></span>
+                                </label>
+                                <span class="tooltiptext">Keep Default Weight</span>
+                              </button>
+                            </th>
+                            <th scope="col" width="10%">Vol. Weight
+                              <button type="button" class="tooltip">
+                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                  <input type="checkbox">
+                                  <span></span>
+                                </label>
+                                <span class="tooltiptext">Keep Default Vol. Weight</span>
+                              </button>
+                            </th>
+  
+  
+                            <th scope="col" width="10%">SKU
+                              <button type="button" class="tooltip">
+                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                  <input type="checkbox">
+                                  <span></span>
+                                </label>
+                                <span class="tooltiptext">Keep Default SKU</span>
+                              </button>
+                            </th>
+                            
+                            <th scope="col" width="10%">MOQ
+                              <button type="button" class="tooltip">
+                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                  <input type="checkbox">
+                                  <span></span>
+                                </label>
+                                <span class="tooltiptext">Keep Default MOQ</span>
+                              </button>
+                              <!-- <button type="button" class="default">Keep default SKU</button> -->
+                            </th>
+                            <th scope="col" width="10%"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p>Red / Curly / 5ft</p>
+                            </td>
+                            <td>
+                              <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
+                                <div class="variant_img">
+                                  <img src="images/no-product-image.png" alt="Flowers">
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                                <div class="Right_side_input price_cu">
+                                  <p>Rs.000</p>
+                                </div>
+                              
+                            </td>
+                            <td>
+                              
+                                <div class="Right_side_input weight_input">
+                                  <p>Rs.000</p>
+                                  <p>10%</p>
+                                </div>
+                            
+                            </td>
+                            <td>
+                              <div class="Right_side_input price_cu">
+                                  <p>1</p>
+                             
+                                </div>
+                            </td>
+                            <td>
+                              <div class="Right_side_input weight_input">
+                                  <p>10kg</p>
+                                  <p>500gm</p>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="Right_side_input weight_input">
+                                  <p>10kg</p>
+                                  <p>500gm</p>
+                                </div>
+                            </td>
+  
+  
+                            <td>
+                              <div class="Right_side_input price_cu">
+                                  <p>1</p>
+                             
+                                </div>
+                              
+                            </td>
+                            <td>
+                              <div class="input-field mb-0">
+                                <div class="Right_side_input">
+                                  <input type="text" class="form_control">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                         <a href="edit-variant.html">  
+                         
+                          <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+  
+                      <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                      
+                    </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>Pink / Curly / 5ft</p>
+                            </td>
+                            <td>
+                              <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
+                                <div class="variant_img">
+                                  <img src="images/no-product-image.png" alt="Flowers">
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                              <div class="Right_side_input price_cu">
+                                <p>Rs.000</p>
+                           
+                              </div>
+                            </td>
+                            <td>
+                              <div class="Right_side_input weight_input">
+                                <p>Rs.000</p>
+                                <p>10%</p>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="Right_side_input price_cu">
+                                  <p>Rs.000</p>
+                             
+                                </div>
+                            </td>
+                            <td>
+                              <div class="Right_side_input weight_input">
+                                  <p>10kg</p>
+                                  <p>500gm</p>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="Right_side_input weight_input">
+                                  <p>10kg</p>
+                                  <p>500gm</p>
+                                </div>
+                            </td>
+  
+  
+                            <td>
+                              <div class="Right_side_input price_cu">
+                                  <p>1</p>
+                             
+                                </div>
+                            </td>
+                            <td>
+                              <div class="input-field mb-0">
+                                <div class="Right_side_input">
+                                  <input type="text" class="form_control">
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                         <a href="edit-variant.html">  
+                          <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                      <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                      
+                    </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="SaveProduct_button">
+                      <a href="#" class="btn_cancel">Draft</a>
+                      
+                      <a href="#" class="btn_SavePro ml-1" id="savebtn">Save Product</a>
+                      <a href="add-product-variant.html" class="btn_SavePro ml-1">Save and Add Variant</a>
+                    </div>
+                    <div class="alert alert-success alert-dismissible" id="hide">
+                      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                      <strong>Success!</strong> Indicates a successful or positive action.
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orderList_box1 col-lg-3 col-md-3 col-sm-12 col-12">
+                <div class="add_NewCoupon add_NewCoupon2">
+    
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                      <div class="input-field">
+                        <label>Status*</label>
+                        <div class="Right_side_input">
+                          <select class="Size--list">
+                            <option selected="">Active</option>
+                            <option>Disabled</option>
+                            <option>Disabled</option>
+    
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                      <div class="input-field">
+                        <label>Category*</label>
+                        <div class="Right_side_input">
+                          <select class="Size--list">
+                            <option selected="">Category 1</option>
+                            <option>Category 2</option>
+                            <option>Category 3</option>
+                            <option>Category 4</option>
+                            <option>Category 5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+    
+                </div>
+              </div>
           </div>
+        
+          </div>
+         
      
           <!--===== EDIT VAIANT IMAGE MODAL BEGIN =====--->
           <div class="modal fade" id="updateVariantImg_Modal" tabindex="-1" role="dialog" aria-labelledby="updateVariantImg_ModalLabel" aria-hidden="true">

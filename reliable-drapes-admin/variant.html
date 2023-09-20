@@ -134,19 +134,24 @@
         <div class="m-stack m-stack--ver m-stack--desktop">
           <div class="m-stack__item m-brand m-brand-new eikaebana-logo">
             <div class="m-stack m-stack--ver m-stack--general"><a href="../../index.html" class="logo-wrapper"> <img alt="Eikaebana logo" src="images/logo.svg"></a> </div>
+            <div class="right_btn">
+              <button type="button" class="show_sideBar" id="hide_sidebar">
+                <span class="material-icons menu_btn">menu</span>
+              </button>
+            </div>
           </div>
           <div class="head-border">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header__section">
               <div class="search_div">
                 <div class="input__field"> <i class="las la-search Search_Icon"></i>
                   <input type="text" class="form-control" placeholder="Search for....">
-                  <a href="" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a>
+                  <a href="#" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a>
                 </div>
               </div>
               <div class="float-right header_icons">
                 <ul class="header__list">
                   <li class="header_icons_set"> <a href="#"><i class="lar la-bell icons__prop"></i></a></li>
-                  <li class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right header_icons_set" data-dropdown-toggle="hover" aria-expanded="true"> <span class="profile_visit"> <a href="#"> <span class="header_list_item">Admin <i class="las la-angle-down"></i> </span> </a></span>
+                  <li class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right header_icons_set" data-dropdown-toggle="hover" aria-expanded="true"> <span class="profile_visit"> <a href="javascript:void(0);"> <span class="header_list_item">Admin <i class="las la-angle-down"></i> </span> </a></span>
                     <div class="m-dropdown__wrapper"> <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 34.836px;"></span>
                       <div class="m-dropdown__inner">
                         <div class="m-dropdown__body">
@@ -223,7 +228,7 @@
               <h1>Variant</h1>
             </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn_SavePro" data-toggle="modal" data-target="#exampleModal">
               Add Variant
             </button>
 
@@ -240,7 +245,7 @@
                   <div class="modal-body">
                     <div>
                       <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="input-field">
                             <label>Name*</label>
                             <div class="Right_side_input">
@@ -248,10 +253,9 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                   
+                      </div>                  
                       <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="input-field">
                             <label>Description</label>
                             <div class="Right_side_input">
@@ -261,7 +265,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 mt-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-1">
                           <div class="input-field">
                             <label>Status*</label>
                             <div class="Right_side_input">
@@ -269,7 +273,6 @@
                                 <option selected="">Active</option>
                                 <option>Disabled</option>
                                 <option>Disabled</option>
-
                               </select>
                             </div>
                           </div>
@@ -287,8 +290,6 @@
           </div>
           <div class="orderList_box1">
             <div class="background_box">
-
-
               <div class="m-section__content">
                 <table class="table m-table product_table">
                   <thead class="table_header">
@@ -300,10 +301,8 @@
                         </label>
                       </th> -->
                       <th scope="col" width="25%">Name</th>
-                      
                       <th scope="col" width="25%">Options</th>
-                      <th scope="col" width="25%">Status</th>
-                      
+                      <th scope="col" width="25%">Status</th>                   
                       <th scope="col" width="25%">Action</th>
                     </tr>
                   </thead>
@@ -315,9 +314,6 @@
                           <span></span> 
                         </label>
                       </td> -->
-
-
-
                       <td>
                         <a href="variant-colors.html">Color</a>
                       </td>
@@ -388,9 +384,39 @@
     });
   </script>
 
+<script>
+  document.querySelector('.show_sideBar').addEventListener('click', function(event) {
+    event.preventDefault();
+    var target1 = document.querySelector('.md_mainSidebar');
+    var target2 = document.querySelector('.show_sideBar');
+    if (target1.classList.contains('open')) {
+      target1.classList.remove('open');
+    } 
+    else {
+      target1.classList.add('open');
+    }
+    if (target2.classList.contains('close_btn')) {
+      target2.classList.remove('close_btn');
+    } 
+    else {
+      target2.classList.add('close_btn');
+    }
+  });
+  
+  $('.close_btn').click(function (evt) {
+    evt.stopPropagation();
+    $('.md_mainSidebar').removeClass('open');
+    $(this).removeClass('close_btn');
+  });
 
-
-
+  $('body,html').click(function (e) {
+    var container = $('.md_mainSidebar , .show_sideBar');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.removeClass('open');
+      container.removeClass('close_btn');
+    }
+  });
+</script>
 
 
 
