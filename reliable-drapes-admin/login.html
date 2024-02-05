@@ -12,69 +12,62 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/responsive.css" />
-<style>
-
-</style>
 </head>
 <body class="banner2">
-    <!-- START banner -->	
-    <section>
-        <header>
-            <div class="profile_header2">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.svg" class="desk_logo1" alt="Logo">               
-                    </a>               
-                </nav>
+  <!-- START banner -->	
+  <section>
+    <header>
+      <div class="profile_header2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.svg" class="desk_logo1" alt="Logo">               
+          </a>               
+        </nav>
+      </div>
+    </header>
+    <!-- END header -->
+    <div class="login_outer">
+      <div class="users">
+        <div class="form_model">
+          <div class="Login-sd">
+            <h1>Admin Login</h1>
+          </div>
+          <div class="form_tp">
+            <div id="Login">
+              <div class="form-group">
+                <input type="text" class="form-control ctrl_focus" placeholder="Username*">
+                <span class="required-message"><i class="las la-exclamation-circle error_icon"></i> Username does not exist.</span>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+                <i class="las la-eye-slash icon_eye"></i>
+              </div>
+              <button type="submit" class="btn btn_primary">Login</button>
             </div>
-        </header>
-        <!-- END header -->
-        <div class="login_outer">
-            <div class="users">
-                <div class="form_model">
-                    <div class="Login-sd">
-                      <h1>Admin Login</h1>
-                    </div>
-                    <div class="form_tp">
-                      <div id="Login">
-                        <div class="form-group">
-                          <input type="text" class="form-control ctrl_focus" placeholder="Username*">
-                          <span class="required-message"><i class="las la-exclamation-circle error_icon"></i> Username does not exist.</span>
-                        </div>
-                        <div class="form-group">
-                          <input type="password" class="form-control" placeholder="Password">
-                          <i class="las la-eye icon_eye"></i>
-                          <i class="las fa-eye-slash icon_eye"></i>
-                        </div>
-                        <button type="submit" class="btn btn_primary">Login</button>
-                      </div>
-                    </div>
-                 </div>
-            </div>
+          </div>
         </div>
-        
-    </section>
-    <!-- END banner -->
-    
-    <!-- js -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--========= MOBILE MENU SCRIPT START =========-->
-    <script>
-    'use strict';
-    (function() {
-        var body = document.body;
-        var burgerMenu = document.getElementsByClassName('b-menu')[0];
-        var burgerContain = document.getElementsByClassName('b-container')[0];
-        var burgerNav = document.getElementsByClassName('b-nav')[0];
-        burgerMenu.addEventListener('click', function toggleClasses() {
-            [body, burgerContain, burgerNav].forEach(function (el) {
-                el.classList.toggle('open');
-            });
-        }, false);
-    })();
-    </script>
-    <!--=========== MOBILE MENU SCRIPT END ==========-->
-    
-    </body>
+      </div>
+    </div>
+  </section>
+  <!-- END banner -->
+  <!-- js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--========= MOBILE MENU SCRIPT START =========-->
+  <script>
+  'use strict';
+  (function() {
+    var body = document.body;
+    var burgerMenu = document.getElementsByClassName('b-menu')[0];
+    var burgerContain = document.getElementsByClassName('b-container')[0];
+    var burgerNav = document.getElementsByClassName('b-nav')[0];
+    burgerMenu.addEventListener('click', function toggleClasses() {
+      [body, burgerContain, burgerNav].forEach(function (el) {
+        el.classList.toggle('open');
+      });
+    }, false);
+  })();
+  </script>
+  <!--=========== MOBILE MENU SCRIPT END ==========-->
+</body>
 </html>

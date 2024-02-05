@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Customers</title>
+<title>Credits</title>
 <meta name="description" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -164,7 +164,7 @@ to {
       <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"> <i class="las la-close"></i> </button>
       <div id="m_aside_left" class="m-grid__item	m-aside-left vendor-skin-light savoline_sidebar md_mainSidebar">
         <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--submenu-skin-dark" data-menu-vertical="true" data-menu-scrollable="false" data-menu-dropdown-timeout="500">
-          <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
+          <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow">
             <li class="m-menu__item sidebar_list" aria-haspopup="true">
               <a href="#" class="m-menu__link ">
                 <i class="las la-tachometer-alt"></i>
@@ -215,36 +215,60 @@ to {
         <div class="m-content padding-bottom-0">
           <div class="OrderList__heading">
             <div class="order__head">
-              <h1>Customers</h1>
+              <h1>Credits</h1>
             </div>
-          </div>  
+            <!-- Button trigger modal -->
+            <a href="#" class="btn_SavePro" data-toggle="modal" data-target="#addCreditModal">Add Credits</a>
+            <!-- Modal -->
+            <div class="modal fade" id="addCreditModal" tabindex="-1" role="dialog" aria-labelledby="addCreditModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Give Credits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                          <div class="input-field">
+                            <label>User*</label>
+                            <div class="Right_side_input">
+                              <input type="text" class="form-control" placeholder="Search By User Id / Email">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                          <div class="input-field">
+                            <label>Credits*</label>
+                            <div class="Right_side_input">
+                              <input type="text" class="form-control" placeholder="ex. 100">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="orderList_box1">
             <div class="background_box">
               <div class="m-section__content">
                 <div class="serching__bar def_width">
                   <div class="brands_drop">
-                    <span class="Left_1">Filter By:</span>
-                    <span class="Left_2">
-                      <select class="status_dropdown form-control">
-                        <option>Active</option>
-                        <option>Deactive</option>
-                        <option>All</option>
-                      </select>
-                    </span>
-                    <span class="Left_2">
-                      <select class="status_dropdown form-control">
-                        <option>Ascending</option>
-                        <option>Descending</option>
-                      </select>
-                    </span>
-                    <span class="Left_3"><a href="#" class="btn_SavePro"> Filter</a></span>
-                  </div>
-                </div>
-                <div class="serching__bar def_width">
-                  <div class="brands_drop">
                     <span class="Left_1">Sort By:</span>
                     <span class="Left_2">
-                      <input type="text" class="form-control" placeholder="Search By Customer Name">
+                      <input type="text" class="form-control" placeholder="Search By User Id / Email">
                     </span>
                     <span class="Left_3"><a href="#" class="btn_SavePro"> Search</a></span>
                   </div>
@@ -254,9 +278,8 @@ to {
                     <thead class="table_header">
                       <tr>
                         <th scope="col" width="20%"> </th>
-                        <th scope="col" width="30%"> </th>
-                        <th scope="col" width="30%"> </th>
-                        <th scope="col" width="10%"> Action </th>
+                        <th scope="col" width="50%"> </th>
+                        <th scope="col" width="30%"> Credits </th>
                       </tr>
                     </thead>
                     <tbody class="table_bg">
@@ -265,12 +288,10 @@ to {
                           <a href="customer-detail.html">
                             <div class="coupon_detail">
                               <ul class="Left_txt">
-                                <li>Name</li>
-                                <li>Account Status</li>
+                                <li>User Id</li>
                               </ul>
                               <ul class="Right_txt">
-                                <li>___</li>
-                                <li><p class="user_status">Verified</p></li>
+                                <li>john28</li>
                               </ul>
                             </div>
                           </a>
@@ -280,46 +301,24 @@ to {
                             <div class="coupon_detail">
                               <ul class="Left_txt">
                                 <li>Email</li>
-                                <li>Phone no.</li>
                               </ul>
                               <ul class="Right_txt">
-                                <li>sippy.sharma@gmail.com</li>
-                                <li>9871693121</li>
+                                <li>john28@gmail.com</li>
                               </ul>
                             </div>
                           </a>
                         </td>
-                        <td>
-                          <a href="customer-detail.html">
-                            <div class="coupon_detail">
-                              <ul class="Left_txt">
-                                <li>Orders</li>
-                                <li>Country</li>
-                              </ul>
-                              <ul class="Right_txt">
-                                <li>10</li>
-                                <li>India</li>
-                              </ul>
-                            </div>
-                          </a>
-                        </td>
-                        <td>
-                          <span><a href="" class="view_btn">View</a></span>
-                        </td>
+                        <td>60</td>
                       </tr>
                       <tr> 
                         <td>
                           <a href="customer-detail.html">
                             <div class="coupon_detail">
                               <ul class="Left_txt">
-                                <li>Name</li>
-                                <li>Account Status</li>
+                                <li>User Id</li>
                               </ul>
                               <ul class="Right_txt">
-                                <li>Gurpreet</li>
-                                <li>
-                                  <p class="user_status expired_status">Unverified</p>
-                                </li>
+                                <li>gurpreet1010</li>
                               </ul>
                             </div>
                           </a>
@@ -329,46 +328,24 @@ to {
                             <div class="coupon_detail">
                               <ul class="Left_txt">
                                 <li>Email</li>
-                                <li>Phone no.</li>
                               </ul>
                               <ul class="Right_txt">
-                                <li>___</li>
-                                <li>9878782789</li>
+                                <li>gurpreet1010@gmaul.com</li>
                               </ul>
                             </div>
                           </a>
                         </td>
-                        <td>
-                          <a href="customer-detail.html">
-                            <div class="coupon_detail">
-                              <ul class="Left_txt">
-                                <li>Orders</li>
-                                <li>Country</li>
-                              </ul>
-                              <ul class="Right_txt">
-                                <li>10</li>
-                                <li>India</li>
-                              </ul>
-                            </div>
-                          </a>
-                        </td>
-                        <td>
-                          <span><a href="" class="view_btn">View</a></span>
-                        </td>
+                        <td>50</td>
                       </tr>
-                      <tr>
+                      <tr> 
                         <td>
                           <a href="customer-detail.html">
                             <div class="coupon_detail">
                               <ul class="Left_txt">
-                                <li>Name</li>
-                                <li>Account Status</li>
+                                <li>User Id</li>
                               </ul>
                               <ul class="Right_txt">
-                                <li>Tushar</li>
-                                <li>
-                                  <p class="user_status">Verified</p>
-                                </li>
+                                <li>john28</li>
                               </ul>
                             </div>
                           </a>
@@ -378,117 +355,19 @@ to {
                             <div class="coupon_detail">
                               <ul class="Left_txt">
                                 <li>Email</li>
-                                <li>Phone no.</li>
                               </ul>
                               <ul class="Right_txt">
-                                <li>tushar@hashbrown.in</li>
-                                <li>___</li>
+                                <li>john28@gmail.com</li>
                               </ul>
                             </div>
                           </a>
                         </td>
-                        <td>
-                          <a href="customer-detail.html">
-                            <div class="coupon_detail">
-                              <ul class="Left_txt">
-                                <li>Orders</li>
-                                <li>Country</li>
-                              </ul>
-                              <ul class="Right_txt">
-                                <li>15</li>
-                                <li>India</li>
-                              </ul>
-                            </div>
-                          </a>
-                        </td>
-                        <td>
-                          <span><a href="" class="view_btn">View</a></span>
-                        </td>
+                        <td>100</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>    
               </div>
-              <!-- Button trigger modal -->
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div>
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                            <div class="input-field">
-                              <label>Name*</label>
-                              <div class="Right_side_input">
-                                <input type="text" class="form_control">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                            <div class="input-field">
-                              <label>Description</label>
-                              <div class="Right_side_input">
-                                <textarea rows="3" type="text" class="form_control"></textarea>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                            <div class="input-field mb-0">
-                              <label>Image</label>
-                              <div class="Right_side_input">
-                                <div class="upload_files">
-                                  <span class="input_files">
-                                    <input type="file" multiple="">
-                                  </span>
-                                  <div class="inner_design">
-                                    <span class="material-icons">arrow_circle_left</span>
-                                    <button type="button">Add Images</button>
-                                  </div>
-                                </div>
-                                <div class="upload_images" style="margin-top: 10px;">
-                                  <img src="images/mud-flowers.jpg" alt="Flowers">
-                                  <div class="hover_divBox">
-                                    <button type="button"><span class="material-icons delete_icon">close</span></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 mt-1">
-                            <div class="input-field">
-                              <label>Status*</label>
-                              <div class="Right_side_input">
-                                <select class="Size--list">
-                                  <option selected="">Active</option>
-                                  <option>Disabled</option>
-                                  <option>Disabled</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div> 
             </div>
           </div>
         </div>

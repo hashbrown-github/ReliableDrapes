@@ -66,44 +66,28 @@
       <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"> <i class="las la-close"></i> </button>
       <div id="m_aside_left" class="m-grid__item	m-aside-left vendor-skin-light savoline_sidebar md_mainSidebar">
         <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--submenu-skin-dark" data-menu-vertical="true" data-menu-scrollable="false" data-menu-dropdown-timeout="500">
-          <ul class="header__list">
-            <li class="header_icons_set"> <a href="#"><i class="lar la-bell icons__prop"></i></a></li>
-            <li class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right header_icons_set" data-dropdown-toggle="hover" aria-expanded="true"> <span class="profile_visit"> <a href="#"> <span class="header_list_item">Admin <i class="las la-angle-down"></i> </span> </a></span>
-              <div class="m-dropdown__wrapper"> <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 70.172px;"></span>
-                <div class="m-dropdown__inner">
-                  <div class="m-dropdown__body">
-                    <div class="m-dropdown__content">
-                      <ul class="m-nav">
-                        <li class="m-nav__section m-nav__section--first m--hide"> <span class="m-nav__section-text"> Quick Actions </span> </li>
-                        <li class="m-nav__item"> <a href="#" class="m-nav__link"> <i class="m-nav__link-icon las la-user profile__icon"></i> <span class="profile__text"> View Profile </span> </a> </li>
-                        <li class="m-nav__item"> <a href="#" class="m-nav__link"> <i class="m-nav__link-icon las la-unlock-alt profile__icon"></i> <span class="profile__text"> Change Password </span> </a> </li>
-                        <li class="m-nav__item"> <a href="#" class="m-nav__link"> <i class="m-nav__link-icon las la-sign-in-alt profile__icon"></i> <span class="profile__text"> Logout </span> </a> </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
-            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
-              <a href="#" class="m-menu__link "> 
+          <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow">
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="#" class="m-menu__link ">
                 <i class="las la-tachometer-alt"></i>
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Dashboard </span> </span> </h4>
               </a>
             </li>
-            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
-              <a href="products.html" class="m-menu__link "> 
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="products.html" class="m-menu__link">
                 <i class="las la-boxes"></i>
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Products </span> </span> </h4>
               </a>
               <ul class="sidebar_dropdown" style="display: none;">
                 <li><a href="products.html">All Products</a></li>
                 <li><a href="inventory.html">Inventory</a></li>
-              </ul> 
+                <li><a href="category.html">Category</a></li>
+                <li><a href="filter.html">Filter</a></li>
+                <li><a href="variant.html">Variant</a></li>
+              </ul>
             </li>
-            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
-              <a href="orders.html" class="m-menu__link "> 
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="orders.html" class="m-menu__link ">
                 <i class="las la-list"></i>
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Orders </span> </span> </h4>
               </a>
@@ -114,10 +98,16 @@
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Customer </span> </span> </h4>
               </a>
             </li>
-            <li class="m-menu__item sidebar_list" aria-haspopup="true"> 
-              <a href="coupons.html" class="m-menu__link "> 
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="coupons.html" class="m-menu__link ">
                 <i class="las la-tags"></i>
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Coupons </span> </span> </h4>
+              </a>
+            </li>
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="credits.html" class="m-menu__link ">
+                <i class="las la-credit-card"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Credits </span> </span> </h4>
               </a>
             </li>
           </ul>
@@ -163,12 +153,11 @@
                   <li>
                     <h5><i class="las la-luggage-cart"></i> Order Status</h5>
                     <p class="Size--list">
-                      <span class="mr-2">
+                      <span>
                         <select class="download_drop">
                           <option selected="selected">Confirmed</option>
                           <option>Processed</option>
-                          
-                        <option>Fullfilled</option></select>
+                          <option>Fullfilled</option></select>
                       </span>
                       <span class="download_drop">Fullfilled</span>
                     </p>
@@ -177,34 +166,42 @@
                 <ul>
                   <li class="tackingInput">
                     <h5><i class="las la-map-marked-alt"></i> Tracking Detail</h5>
-                    <div class="tracking_options">
-                      <p>
-                        <label class="contain_box">
-                          <input type="radio" class="form_check_add" name="id" value="id" checked="">
-                          <span class="checkmark"></span>
-                        </label>
-                        <span>AWB No.</span>
-                      </p>
-                      <p>
-                        <label class="contain_box">
-                          <input type="radio" class="form_check_add" name="id" value="id">
-                          <span class="checkmark"></span>
-                        </label>
-                        <span>Tracking Id</span>
-                      </p>
-                      <p>
-                        <label class="contain_box">
-                          <input type="radio" class="form_check_add" name="id" value="id">
-                          <span class="checkmark"></span>
-                        </label>
-                        <span>Order Id</span>
-                      </p>
+                    <div class="trackingLinkMain">
+                        <div class="trackingLink">
+                          <input type="text" placeholder="Tracking Link"/>
+                        </div>
+                        <div class="tracking_optionsOuter">
+                            <div class="tracking_options">
+                              <p>
+                                <label class="contain_box">
+                                  <input type="radio" class="form_check_add" name="id" value="id" checked=""/>
+                                  <span class="checkmark"></span>
+                                </label>
+                                <span>AWB No.</span>
+                              </p>
+                              <p>
+                                <label class="contain_box">
+                                  <input type="radio" class="form_check_add" name="id" value="id"/>
+                                  <span class="checkmark"></span>
+                                </label>
+                                <span>Tracking Id</span>
+                              </p>
+                              <p>
+                                <label class="contain_box">
+                                  <input type="radio" class="form_check_add" name="id" value="id"/>
+                                  <span class="checkmark"></span>
+                                </label>
+                                <span>Refrence Id</span>
+                              </p>
+                            </div>
+                            <div class="trackingAwb">
+                              <input type="text" placeholder="AWB No."/>
+                              <a href="#" class="btn_SavePro">Save</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="tracking_input">
-                      <div>
-                        <input type="text" placeholder="AWB No.">
-                        <a href="#" class="btn_SavePro">Save</a>
-                      </div>
+                      <a href="#" class="mailEx">example.com</a>
                       <div class="entered_id">
                         <p>AWB No. : 67672655452</p>
                         <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
@@ -282,8 +279,7 @@
                           <td>
                             <p>Fashion String Polyester 2 Pieces Door Curtain Set,</p>
                             <p class="variant_prop"> White / 7 ft</p>
-                      
-                        </td> 
+                          </td> 
                           <td>Rs. 500</td> 
                           <td>Rs. 500</td> 
                           <td>4</td> 
@@ -295,11 +291,9 @@
                             </div>
                           </td>
                           <td>
-                          
                             <p>Tranquebar Curtain Co. 'Yori'- Premium Cotton Door Curtains with Bird Print</p>
                             <p class="variant_prop"> White / 7 ft</p>
-                          
-                        </td>
+                          </td>
                           <td>Rs. 500</td>
                           <td>Rs. 500</td>
                           <td>4</td>
@@ -319,7 +313,6 @@
                       </tbody>
                     </table>
                   </div>
-                
                 </div>
                 <div class="Price_detail">
                   <h3>Price Detail</h3>
@@ -485,23 +478,5 @@
       }
     });
   </script>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

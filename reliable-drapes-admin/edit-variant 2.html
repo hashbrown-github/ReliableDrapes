@@ -229,7 +229,7 @@
                           </span>
                           <div class="inner_design">
                             <span class="material-icons">arrow_circle_left</span>
-                            <button type="button" onclick="$('#pro-image').click()">Add Images</button>
+                            <a href="javascript:void(0)" onclick="$('#pro-image').click()">Add Images</a>
                           </div>
                         </div>
                         <div class="upload_images">
@@ -240,6 +240,35 @@
                                 <button type="button" class="image-cancel" data-no="1"><span class="material-icons delete_icon">close</span></button>
                               </div>
                             </li>
+                            <li class="preview-image preview-show-2">
+                              <div class="image-zone"><img src="images/curtain1.jpg" id="pro-img-2"/></div>
+                              <div class="hover_divBox">
+                                <button type="button" class="image-cancel" data-no="2"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <li class="preview-image preview-show-3">
+                              <div class="image-zone"><img src="images/curtain1.jpg" id="pro-img-3"/></div>
+                              <div class="hover_divBox">
+                                <button type="button" class="image-cancel" data-no="3"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <li class="preview-image preview-show-4">
+                              <div class="image-zone"><img src="images/curtain2.jpg" id="pro-img-4"/></div>
+                              <div class="hover_divBox">
+                                <button type="button" class="image-cancel" data-no="4"><span class="material-icons delete_icon">close</span></button>
+                              </div>
+                            </li>
+                            <!-- <li>
+                              <div class="upload_files">
+                                <span class="input_files">
+                                  <input type="file" multiple="">
+                                </span>
+                                <div class="inner_design">
+                                  <span class="material-icons">arrow_circle_left</span>
+                                  <button type="button">Add Image</button>
+                                </div>
+                              </div>
+                            </li> -->
                           </ul>
                         </div>
                       </div>
@@ -455,7 +484,7 @@
       $(".preview-image.preview-show-"+no).remove();
   });
 });
-var num = 5;
+var num = 4;
 function readImage() {
   if (window.File && window.FileList && window.FileReader) {
       var files = event.target.files; //FileList object
@@ -470,11 +499,10 @@ function readImage() {
           picReader.addEventListener('load', function (event) {
               var picFile = event.target;
               var html =  '<li class="preview-image preview-show-' + num + '">' +
-                          '<div class="image-zone"><img src="' + picFile.result + '" id="pro-img-' + num + '"></div>' +
-                          '<div class="hover_divBox">' +
+                          '<div class="image-zone"><img  id="pro-img-' + num + '" src="' + picFile.result + '"></div>' +
+                          '<div class="hover_divBox">' + 
                             '<button type="button" class="image-cancel" data-no="' + num + '"><span class="material-icons delete_icon">close</span></button>' +
-                          '</div>' + 
-                          '</li>'
+                          '</div>';
 
               output.append(html);
               num = num + 1;

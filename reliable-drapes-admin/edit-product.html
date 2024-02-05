@@ -1,135 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>Edit Product</title>
-  <meta name="description" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="css/vendors.bundle.css" rel="stylesheet" type="text/css">
-  <link href="css/style.bundle.css" rel="stylesheet" type="text/css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
-  <link rel="shortcut icon" href="images/fav-icon.ico">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/responsive.css" rel="stylesheet" type="text/css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-  <style type="text/css">
-
-    span.im-caret {
-      -webkit-animation: 1s blink step-end infinite;
-      animation: 1s blink step-end infinite;
-    }
-
-    @keyframes blink {
-
-      from,
-      to {
-        border-right-color: black;
-      }
-
-      50% {
-        border-right-color: transparent;
-      }
-    }
-
-    @-webkit-keyframes blink {
-
-      from,
-      to {
-        border-right-color: black;
-      }
-
-      50% {
-        border-right-color: transparent;
-      }
-    }
-
-    span.im-static {
-      color: grey;
-    }
-
-    div.im-colormask {
-      display: inline-block;
-      border-style: inset;
-      border-width: 2px;
-      -webkit-appearance: textfield;
-      -moz-appearance: textfield;
-      appearance: textfield;
-    }
-
-    div.im-colormask>input {
-      position: absolute;
-      display: inline-block;
-      background-color: transparent;
-      color: transparent;
-      -webkit-appearance: caret;
-      -moz-appearance: caret;
-      appearance: caret;
-      border-style: none;
-      left: 0;
-      /*calculated*/
-    }
-
-    div.im-colormask>input:focus {
-      outline: none;
-    }
-
-    div.im-colormask>input::-moz-selection {
-      background: none;
-    }
-
-    div.im-colormask>input::selection {
-      background: none;
-    }
-
-    div.im-colormask>input::-moz-selection {
-      background: none;
-    }
-
-    div.im-colormask>div {
-      color: black;
-      display: inline-block;
-      width: 100px;
-      /*calculated*/
-    }
-  </style>
-  <style type="text/css">
-    /* Chart.js */
-    @-webkit-keyframes chartjs-render-animation {
-      from {
-        opacity: 0.99
-      }
-
-      to {
-        opacity: 1
-      }
-    }
-
-    @keyframes chartjs-render-animation {
-      from {
-        opacity: 0.99
-      }
-
-      to {
-        opacity: 1
-      }
-    }
-
-    .chartjs-render-monitor {
-      -webkit-animation: chartjs-render-animation 0.001s;
-      animation: chartjs-render-animation 0.001s;
-    }
-  </style>
+<meta charset="utf-8">
+<title>Edit Product</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/vendors.bundle.css" rel="stylesheet" type="text/css">
+<link href="css/style.bundle.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+<link rel="shortcut icon" href="images/fav-icon.ico">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 </head>
 <body class="login_form_pages m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled  m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default savoline--body">
   <div class="m-grid m-grid--hor m-grid--root m-page">
-
     <header class="m-grid__item m-header m-header-new savoline_header" data-minimize-offset="200" data-minimize-mobile-offset="200">
       <div class="m-container m-container--fluid m-container--full-height">
         <div class="m-stack m-stack--ver m-stack--desktop">
@@ -141,7 +29,7 @@
               <div class="search_div">
                 <div class="input__field"> <i class="las la-search Search_Icon"></i>
                   <input type="text" class="form-control" placeholder="Search for....">
-                  <a href="" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a>
+                  <a href="#" class="campaignSearch_button"><span class="material-icons-outlined">expand_more</span></a>
                 </div>
               </div>
               <div class="float-right header_icons">
@@ -183,13 +71,14 @@
               </a>
             </li>
             <li class="m-menu__item sidebar_list" aria-haspopup="true">
-              <a href="products.html" class="m-menu__link ">
+              <a href="products.html" class="m-menu__link">
                 <i class="las la-boxes"></i>
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Products </span> </span> </h4>
               </a>
               <ul class="sidebar_dropdown">
                 <li><a href="products.html">All Products</a></li>
                 <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="category.html">Category</a></li>
                 <li><a href="filter.html">Filter</a></li>
                 <li><a href="variant.html">Variant</a></li>
               </ul>
@@ -212,6 +101,12 @@
                 <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Coupons </span> </span> </h4>
               </a>
             </li>
+            <li class="m-menu__item sidebar_list" aria-haspopup="true">
+              <a href="credits.html" class="m-menu__link ">
+                <i class="las la-credit-card"></i>
+                <h4> <span class="m-menu__link-wrap"> <span class="m-menu__link-text"> Credits </span> </span> </h4>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -223,7 +118,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="orderList_box col-lg-9 col-md-9 col-sm-12 col-12">
+            <div class="orderList_box col-lg-8 col-md-8 col-sm-12 col-12">
               <div class="add_NewCoupon">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -235,7 +130,6 @@
                     </div>
                   </div>
                 </div>
-  
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="input-field">
@@ -340,8 +234,7 @@
                       <label>HSN*</label>
                       <div class="Right_side_input hsn_optionDrop">
                         <input type="text" class="form_control" placeholder="5609 00 90">
-                        <div class="autocomplete-items" style="
-        display: none; ">
+                        <div class="autocomplete-items" style="display: none; ">
                           <div><strong>56</strong>08 00 80<input type="hidden" value=""></div>
                           <div><strong>56</strong>68 00 50<input type="hidden" value=""></div>
                         </div>
@@ -367,11 +260,7 @@
                     </div>
                   </div>
                 </div>
-  
               </div>
-         
-  
-  
               <div class="row">
                 <div class="col-lg-12">
                   <h5>Filters</h5>
@@ -381,7 +270,6 @@
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="input-field">
-  
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="input-field">
@@ -391,7 +279,6 @@
                                 <option selected="">Option 1</option>
                                 <option>Option 2</option>
                                 <option>option 3</option>
-  
                               </select>
                             </div>
                           </div>
@@ -401,7 +288,6 @@
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="input-field">
-  
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="input-field">
@@ -412,7 +298,6 @@
                                   <option selected="">Option 1</option>
                                   <option>Option 2</option>
                                   <option>option 3</option>
-  
                                 </select>
                               </div>
                             </div>
@@ -422,13 +307,10 @@
                     </div>
                   </div>
                 </div>
-  
                 <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="input-field">
-                      <label>
-                        Washability*
-                      </label>
+                      <label>Washability*</label>
                       <div class="Right_side_input">
                         <div class="Right_side_input">
                           <select class="Size--list">
@@ -440,7 +322,6 @@
                       </div>
                     </div>
                   </div>
-  
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="input-field">
                       <label>Type of stitching*</label>
@@ -450,8 +331,6 @@
                             <option selected="">Option 1</option>
                             <option>Option 2</option>
                             <option>option 3</option>
-  
-  
                           </select>
                         </div>
                       </div>
@@ -503,30 +382,29 @@
                     </div>
                   </div>
                 </div>
-  
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="input-field">
                       <label>Dimensions*</label>
                       <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-4">
                           <div class="Right_side_input ex_position">
                             <input type="text" class="form_control" placeholder="L">
                             <span>x</span>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-4">
                           <div class="Right_side_input ex_position">
                             <input type="text" class="form_control" placeholder="B">
                             <span>x</span>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-4">
                           <div class="Right_side_input">
                             <input type="text" class="form_control" placeholder="H">
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-12">
                           <div class="Right_side_input">
                             <select class="Size--list">
                               <option selected="">Inches</option>
@@ -539,7 +417,6 @@
                   </div>
                 </div>
               </div>
-  
               <div class="row">
                 <div class="col-lg-12">
                   <h5>Inventory</h5>
@@ -583,302 +460,268 @@
                   </div>
                 </div>
               </div>
-              
               <div class="row">
                 <div class="col-lg-12">
                   <h5>Variants</h5>
                 </div>
               </div>
-  
               <div class="add_NewCoupon">
                 <div class="row">
                   <div class="col-md-12">
-              <div class="add_size">
-              <h5>Size
-                <a href="add-product.html">  <button type="button"><i class="fa fa-pen Edit_Btn"></i></button> </a>
-              
-              </h5>
-              <div class="inner_text">
-              <p>Large</p>
-              <p>Small</p>
-              </div>
-              </div>
+                    <div class="add_size">
+                      <h5>Size
+                        <a href="add-product.html"> <button type="button"><i class="fa fa-pen Edit_Btn"></i></button> </a>
+                      </h5>
+                      <div class="inner_text">
+                        <p>Large</p>
+                        <p>Small</p>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-md-12">
                     <div class="add_color">
-                      <h5>Color
-                        
-                      </h5>
+                      <h5>Color</h5>
                       <div class="inner_text">
-                      <p>Red</p>
-                      <p>Blue</p>
+                        <p>Red</p>
+                        <p>Blue</p>
                       </div>
                     </div>
-                 
-                    </div>
                   </div>
-                  <div class="variants_opt">
-                    <div class="vari_opt1">
-                      <h4>Preview</h4>
-                      
-                    </div>
-                    <div class="vari_opt5">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col" width="10%">Variant</th>
-                            <th scope="col" width="10%">Image</th>
-                            <th scope="col" width="10%">Selling Price</th>
-                            <th scope="col" width="10%">Discount</th>
-                            <th scope="col" width="10%">Stock
-                              <button type="button" class="tooltip">
-                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                  <input type="checkbox">
-                                  <span></span>
-                                </label>
-                                <span class="tooltiptext">Keep Default Stock</span>
-                              </button>
-                            </th>
-                            <th scope="col" width="10%">Weight
-                              <button type="button" class="tooltip">
-                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                  <input type="checkbox">
-                                  <span></span>
-                                </label>
-                                <span class="tooltiptext">Keep Default Weight</span>
-                              </button>
-                            </th>
-                            <th scope="col" width="10%">Vol. Weight
-                              <button type="button" class="tooltip">
-                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                  <input type="checkbox">
-                                  <span></span>
-                                </label>
-                                <span class="tooltiptext">Keep Default Vol. Weight</span>
-                              </button>
-                            </th>
-  
-  
-                            <th scope="col" width="10%">SKU
-                              <button type="button" class="tooltip">
-                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                  <input type="checkbox">
-                                  <span></span>
-                                </label>
-                                <span class="tooltiptext">Keep Default SKU</span>
-                              </button>
-                            </th>
-                            
-                            <th scope="col" width="10%">MOQ
-                              <button type="button" class="tooltip">
-                                <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
-                                  <input type="checkbox">
-                                  <span></span>
-                                </label>
-                                <span class="tooltiptext">Keep Default MOQ</span>
-                              </button>
-                              <!-- <button type="button" class="default">Keep default SKU</button> -->
-                            </th>
-                            <th scope="col" width="10%"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <p>Red / Curly / 5ft</p>
-                            </td>
-                            <td>
-                              <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
-                                <div class="variant_img">
-                                  <img src="images/no-product-image.png" alt="Flowers">
-                                </div>
-                              </a>
-                            </td>
-                            <td>
-                                <div class="Right_side_input price_cu">
-                                  <p>Rs.000</p>
-                                </div>
-                              
-                            </td>
-                            <td>
-                              
-                                <div class="Right_side_input weight_input">
-                                  <p>Rs.000</p>
-                                  <p>10%</p>
-                                </div>
-                            
-                            </td>
-                            <td>
-                              <div class="Right_side_input price_cu">
-                                  <p>1</p>
-                             
-                                </div>
-                            </td>
-                            <td>
-                              <div class="Right_side_input weight_input">
-                                  <p>10kg</p>
-                                  <p>500gm</p>
-                                </div>
-                            </td>
-                            <td>
-                              <div class="Right_side_input weight_input">
-                                  <p>10kg</p>
-                                  <p>500gm</p>
-                                </div>
-                            </td>
-  
-  
-                            <td>
-                              <div class="Right_side_input price_cu">
-                                  <p>1</p>
-                             
-                                </div>
-                              
-                            </td>
-                            <td>
-                              <div class="input-field mb-0">
-                                <div class="Right_side_input">
-                                  <input type="text" class="form_control">
-                                </div>
+                </div>
+                <div class="variants_opt">
+                  <div class="vari_opt1">
+                    <h4>Preview</h4>
+                  </div>
+                  <div class="vari_opt5">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" width="10%">Variant</th>
+                          <th scope="col" width="10%">Image</th>
+                          <th scope="col" width="10%">Selling Price</th>
+                          <th scope="col" width="10%">Discount</th>
+                          <th scope="col" width="10%">Stock
+                            <button type="button" class="tooltip">
+                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                <input type="checkbox">
+                                <span></span>
+                              </label>
+                              <span class="tooltiptext">Keep Default Stock</span>
+                            </button>
+                          </th>
+                          <th scope="col" width="10%">Weight
+                            <button type="button" class="tooltip">
+                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                <input type="checkbox">
+                                <span></span>
+                              </label>
+                              <span class="tooltiptext">Keep Default Weight</span>
+                            </button>
+                          </th>
+                          <th scope="col" width="10%">Vol. Weight
+                            <button type="button" class="tooltip">
+                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                <input type="checkbox">
+                                <span></span>
+                              </label>
+                              <span class="tooltiptext">Keep Default Vol. Weight</span>
+                            </button>
+                          </th>
+                          <th scope="col" width="10%">SKU
+                            <button type="button" class="tooltip">
+                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                <input type="checkbox">
+                                <span></span>
+                              </label>
+                              <span class="tooltiptext">Keep Default SKU</span>
+                            </button>
+                          </th>
+                          <th scope="col" width="10%">MOQ
+                            <button type="button" class="tooltip">
+                              <label class="m-checkbox m-checkbox--solid m-checkbox--single m-checkbox--brand">
+                                <input type="checkbox">
+                                <span></span>
+                              </label>
+                              <span class="tooltiptext">Keep Default MOQ</span>
+                            </button>
+                            <!-- <button type="button" class="default">Keep default SKU</button> -->
+                          </th>
+                          <th scope="col" width="10%"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p>Red / Curly / 5ft</p>
+                          </td>
+                          <td>
+                            <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
+                              <div class="variant_img">
+                                <img src="images/no-product-image.png" alt="Flowers">
                               </div>
-                            </td>
-                            <td>
-                         <a href="edit-variant.html">  
-                         
-                          <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-  
-                      <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                      
-                    </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p>Pink / Curly / 5ft</p>
-                            </td>
-                            <td>
-                              <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
-                                <div class="variant_img">
-                                  <img src="images/no-product-image.png" alt="Flowers">
-                                </div>
-                              </a>
-                            </td>
-                            <td>
-                              <div class="Right_side_input price_cu">
-                                <p>Rs.000</p>
-                           
+                            </a>
+                          </td>
+                          <td>
+                            <div class="Right_side_input price_cu">
+                              <p>Rs.000</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input weight_input">
+                              <p>Rs.000</p>
+                              <p>10%</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input price_cu">
+                              <p>1</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input weight_input">
+                              <p>10kg</p>
+                              <p>500gm</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input weight_input">
+                              <p>10kg</p>
+                              <p>500gm</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input price_cu">
+                              <p>1</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="input-field mb-0">
+                              <div class="Right_side_input">
+                                <input type="text" class="form_control">
                               </div>
-                            </td>
-                            <td>
-                              <div class="Right_side_input weight_input">
-                                <p>Rs.000</p>
-                                <p>10%</p>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="edit-variant.html">
+                              <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                              <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Pink / Curly / 5ft</p>
+                          </td>
+                          <td>
+                            <a href="" data-toggle="modal" data-target="#updateVariantImg_Modal">
+                              <div class="variant_img">
+                                <img src="images/no-product-image.png" alt="Flowers">
                               </div>
-                            </td>
-                            <td>
-                              <div class="Right_side_input price_cu">
-                                  <p>Rs.000</p>
-                             
-                                </div>
-                            </td>
-                            <td>
-                              <div class="Right_side_input weight_input">
-                                  <p>10kg</p>
-                                  <p>500gm</p>
-                                </div>
-                            </td>
-                            <td>
-                              <div class="Right_side_input weight_input">
-                                  <p>10kg</p>
-                                  <p>500gm</p>
-                                </div>
-                            </td>
-  
-  
-                            <td>
-                              <div class="Right_side_input price_cu">
-                                  <p>1</p>
-                             
-                                </div>
-                            </td>
-                            <td>
-                              <div class="input-field mb-0">
-                                <div class="Right_side_input">
-                                  <input type="text" class="form_control">
-                                </div>
+                            </a>
+                          </td>
+                          <td>
+                            <div class="Right_side_input price_cu">
+                              <p>Rs.000</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input weight_input">
+                              <p>Rs.000</p>
+                              <p>10%</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input price_cu">
+                              <p>Rs.000</p>
+          
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input weight_input">
+                              <p>10kg</p>
+                              <p>500gm</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input weight_input">
+                              <p>10kg</p>
+                              <p>500gm</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="Right_side_input price_cu">
+                              <p>1</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="input-field mb-0">
+                              <div class="Right_side_input">
+                                <input type="text" class="form_control">
                               </div>
-                            </td>
-                            <td>
-                         <a href="edit-variant.html">  
-                          <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
-                      <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
-                      
-                    </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                            </div>
+                          </td>
+                          <td>
+                            <a href="edit-variant.html">
+                              <button type="button"><i class="fa fa-pen Edit_Btn"></i></button>
+                              <!-- <button type="button"><i class="fa fa-eye-slash Edit_Btn"></i></button> -->
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="orderList_box1 col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="add_NewCoupon">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-field">
+                      <label>Status*</label>
+                      <div class="Right_side_input">
+                        <select class="Size--list">
+                          <option selected="">Active</option>
+                          <option>Disabled</option>
+                          <option>Disabled</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-12">
-                    <div class="SaveProduct_button">
-                      <a href="#" class="btn_cancel">Draft</a>
-                      
-                      <a href="#" class="btn_SavePro ml-1" id="savebtn">Save Product</a>
-                      <a href="add-product-variant.html" class="btn_SavePro ml-1">Save and Add Variant</a>
-                    </div>
-                    <div class="alert alert-success alert-dismissible" id="hide">
-                      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                      <strong>Success!</strong> Indicates a successful or positive action.
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="orderList_box1 col-lg-3 col-md-3 col-sm-12 col-12">
-                <div class="add_NewCoupon add_NewCoupon2">
-    
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                      <div class="input-field">
-                        <label>Status*</label>
-                        <div class="Right_side_input">
-                          <select class="Size--list">
-                            <option selected="">Active</option>
-                            <option>Disabled</option>
-                            <option>Disabled</option>
-    
-                          </select>
-                        </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
+                    <div class="input-field">
+                      <label>Category*</label>
+                      <div class="Right_side_input">
+                        <select class="Size--list">
+                          <option selected="">Category 1</option>
+                          <option>Category 2</option>
+                          <option>Category 3</option>
+                          <option>Category 4</option>
+                          <option>Category 5</option>
+                        </select>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
-                      <div class="input-field">
-                        <label>Category*</label>
-                        <div class="Right_side_input">
-                          <select class="Size--list">
-                            <option selected="">Category 1</option>
-                            <option>Category 2</option>
-                            <option>Category 3</option>
-                            <option>Category 4</option>
-                            <option>Category 5</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-    
                 </div>
               </div>
+            </div>
           </div>
-        
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="SaveProduct_button">
+                <a href="#" class="btn_cancel">Draft</a>
+                <a href="#" class="btn_SavePro ml-1" id="savebtn">Save Product</a>
+                <a href="add-product-variant.html" class="btn_SavePro ml-1">Save and Add Variant</a>
+              </div>
+              <div class="alert alert-success alert-dismissible" id="hide">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+            </div>
           </div>
-         
-     
+        </div>
           <!--===== EDIT VAIANT IMAGE MODAL BEGIN =====--->
           <div class="modal fade" id="updateVariantImg_Modal" tabindex="-1" role="dialog" aria-labelledby="updateVariantImg_ModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -951,27 +794,19 @@
                 <div class="modal-footer">
                   <button type="button" class="btn_cancel" data-dismiss="modal">Cancel</button>
                   <button type="button" class="btn_SavePro ml-1">Save</button>
-             
                 </div>
               </div>
             </div>
-    
-     
           <!--===== EDIT VAIANT IMAGE MODAL END =====--->
-     
         </div>
       </div>
     </div>
-  
-    
   </div>
   <script src="js/vendors.bundle.js" type="text/javascript"></script>
   <script src="js/scripts.bundle.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/jquery.min.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
   <script type="text/javascript">
     $("#checkbnox1").hide();
     $(".checkbox").click(function () {
