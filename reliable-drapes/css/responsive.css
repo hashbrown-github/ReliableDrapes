@@ -157,14 +157,25 @@
 .empty_sec img {
     width: 230px;
 }
-.privacy_policy h3 {
+.privacy_policy h3, .privacy_policy h1 {
     font-size: 28px;
     line-height: 37px;
+}
+.privacy_policy h2 {
+    font-size: 20px;
+    line-height: 26.6px;
 }
 .privacy_policy h4 {
     font-size: 17px;
     line-height: 23px;
     margin-top: 30px;
+}
+.aboutus_sec311 img {
+    height: 100%;
+}
+.links_list h2 {
+    font-size: 48px;
+    line-height: 58px;
 }
 }
 @media (max-width: 1280px) {
@@ -220,7 +231,7 @@
 .List_pagination {
     margin-top: 40px;
 }
-.product_dtl13 h3, .related_proSec h2 {
+.product_dtl13 > h3, .related_proSec h2 {
     font-size: 28px;
     line-height: 40px;
 }
@@ -255,6 +266,19 @@
 }
 .contact_box .Contact_Right {
     padding-left: 10%;
+}
+.links_list h2 {
+    font-size: 46px;
+    line-height: 56px;
+}
+.aboutus_sec31 {
+    gap: 40px;
+}
+.aboutus_sec311, .aboutus_sec312 {
+    width: calc(50% - 20px);
+}
+.aboutus_sec312 ul li:not(:last-child) {
+    margin-bottom: 20px;
 }
 }
 @media (max-width: 1100px) {
@@ -313,7 +337,7 @@
 .product_dtl12 {
     width: 52%;
 }
-.product_dtl13 h3, .related_proSec h2 {
+.product_dtl13 > h3, .related_proSec h2 {
     font-size: 26px;
     line-height: 38px;
 }
@@ -331,6 +355,14 @@
 }
 .proImge {
     width: 120px;
+}
+.paymentSec_21 p.cashOnDel img {
+    width: 85px;
+    top: -6px;
+}
+.links_list h2 {
+    font-size: 44px;
+    line-height: 54px;
 }
 }
 @media (max-width: 1024px) {
@@ -489,10 +521,14 @@
     font-size: 18px;
     line-height: 24px;
 }
-.privacy_policy h3 {
+.privacy_policy h3, .privacy_policy h1 {
     font-size: 26px;
     line-height: 35px;
     margin-bottom: 15px;
+}
+.privacy_policy h2 {
+    font-size: 18px;
+    line-height: 24px;
 }
 .privacy_policy h4 {
     font-size: 16px;
@@ -508,6 +544,33 @@
 }
 .headSec_5 {
     margin-top: 20px;
+}
+.loginSign_pop .modal_form {
+    margin: 15px 0;
+}
+.signup_links2 {
+    margin: 5px 0;
+}
+.links_list h2 {
+    font-size: 36px;
+    line-height: 48px;
+}
+.aboutus_sec20 h3, .aboutus_sec30 h3 {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.aboutus_sec312 ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.aboutus_sec20 p.borderLeft, .aboutus_sec312 li p.borderLeft {
+    font-size: 15px;
+}
+.aboutus_sec31 {
+    gap: 30px;
+}
+.aboutus_sec311, .aboutus_sec312 {
+    width: calc(50% - 15px);
 }
 }
 @media (max-width: 883px) {
@@ -552,7 +615,7 @@
     padding-top: 0;
 }
 .headSec {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 }
 @media (max-width: 768px) {
@@ -902,7 +965,7 @@
     font-size: 14px;
     line-height: 18px;
 }
-.product_dtl13 h3, .related_proSec h2 {
+.product_dtl13 > h3, .related_proSec h2 {
     font-size: 24px;
     line-height: 36px;
 }
@@ -955,8 +1018,7 @@
     width: 44px;
 }
 .cartSec_1 {
-    padding-top: 30px;
-    padding-bottom: 35px;
+    padding: 30px 0;
 }
 .empty_sec img {
     width: 200px;
@@ -995,6 +1057,26 @@
 .paymentSec_21 h4 {
     font-size: 20px;
     line-height: 28px;
+}
+.paymentSec_21 p.cashOnDel img {
+    width: 80px;
+    top: -5px;
+}
+.loginSign_pop .modal_head h4 {
+    font-size: 26px;
+    line-height: 35px;
+}
+.links_list h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+.aboutus_sec31 {
+    flex-direction: column-reverse;
+    gap: 25px;
+}
+.aboutus_sec311, .aboutus_sec312 {
+    width: 100%;
 }
 }
 @media (max-width: 576px) { 
@@ -1073,7 +1155,7 @@
 .watchlistSec {
     padding: 30px 0;
 }
-.product_dtl13 h3, .related_proSec h2 {
+.product_dtl13 > h3, .related_proSec h2 {
     font-size: 22px;
     line-height: 34px;
 }
@@ -1165,6 +1247,27 @@
     margin-top: 15px;
     margin-bottom: 20px;
 }
+.paymentSec_21 p.cashOnDel img {
+    width: 75px;
+    top: -4px;
+}
+.writeReview_m.loginSign_pop .modal-dialog {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    max-width: 100%;
+}
+.writeReview_m.loginSign_pop .modal-body {
+    padding: 30px;
+}
+.signup_links3 ul li {
+    width: 130px;
+    padding: 10px 15px;
+}
+.links_list h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
 }
 @media (max-width: 480px) { 
 .b-nav {
@@ -1208,7 +1311,7 @@
 .prodtl_7 {
     margin-top: 15px;
 }
-.product_dtl13 h3, .related_proSec h2 {
+.product_dtl13 > h3, .related_proSec h2 {
     font-size: 20px;
     line-height: 32px;
 }
@@ -1231,6 +1334,34 @@
 }
 .cartSec_2 ul li {
     flex-direction: column;
+}
+.writeReview_m.loginSign_pop .modal-body {
+    padding: 20px 15px;
+}
+.loginSign_pop .modal_head h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.login_btns p {
+    margin-top: 5px;
+}
+.links_list h2 {
+    font-size: 28px;
+    line-height: 37px;
+}
+.aboutus_sec20 p, .aboutus_sec30 p, .aboutus_sec312 li p {
+    margin-bottom: 12px;
+}
+.aboutus_sec20 p.borderLeft, .aboutus_sec312 li p.borderLeft {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    border-left: 2px solid #D05335;
+}
+.aboutus_sec20 h3, .aboutus_sec30 h3 {
+    font-size: 24px;
+    line-height: 28px;
+
 }
 }
 @media (max-width: 450px) { 
@@ -1383,9 +1514,13 @@
     line-height: 24px;
     margin-bottom: 12px;
 }
-.privacy_policy h3 {
+.privacy_policy h3, .privacy_policy h1 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 28px;
+}
+.privacy_policy h2 {
+    font-size: 16px;
+    line-height: 22px;
 }
 .privacy_policy h4 {
     font-size: 15px;
@@ -1399,6 +1534,19 @@
 }
 .headSec2 {
     margin-bottom: 10px;
+}
+.loginSign_pop .modal_head h4 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.writeReview_m.loginSign_pop .modal-dialog {
+    margin: 0 15px;
+    width: calc(100% - 30px);
+}
+.links_list h2 {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 12px;
 }
 }
 @media (max-width: 360px) { 
@@ -1493,6 +1641,13 @@
 .addSave_btns {
     gap: 10px;
     flex-direction: column;
+}
+.signup_links3 ul li {
+    width: 115px;
+    padding: 10px 12px;
+}
+.signup_links2 {
+    margin: 0;
 }
 }
 @media (max-width: 330px) { 

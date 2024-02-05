@@ -1343,6 +1343,7 @@ section {
 .List_pagination {
     width: 100%;
     margin-top: 50px;
+    text-align: center;
 }
 .List_pagination ul {
     display: flex;
@@ -1986,7 +1987,7 @@ section {
     width: 100%;
     max-width: 580px;
 }
-.product_dtl13 h3, .related_proSec h2 {
+.product_dtl13 > h3, .related_proSec h2 {
     font-weight: 500;
     font-size: 30px;
     line-height: 42px;
@@ -2073,6 +2074,22 @@ section {
 }
 .detail_tabs .tab-content p b {
     font-weight: 500;
+}
+.tabs_content ul {
+    width: 100%;
+}
+.tabs_content ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.tabs_content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .rat_review {
     width: 100%;
@@ -2304,6 +2321,9 @@ section {
     margin: 30px 0;
     text-align: left;
 }
+.loginSign_pop .modal_form {
+    margin-top: 20px;
+}
 .input_field {
     width: 100%;
     font-size: 0;
@@ -2498,6 +2518,17 @@ section {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
+}
+.showPass {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+.showPass span {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
 }
 /*===== LOGIN / SIGN UP POPUPS =====*/
 /*========= WATCHLIST START ========*/
@@ -3224,6 +3255,10 @@ span.org_color {
 .paymentSec_1 {
     width: 100%;
 }
+.paySec_11 {
+    width: 100%;
+    margin-top: 20px;
+}
 .paymentSec_1 ul {
     width: 100%;
     display: flex;
@@ -3295,7 +3330,18 @@ span.org_color {
     margin-bottom: 20px;
 }
 .paymentSec_21 p.cashOnDel {
-    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.paymentSec_21 p.cashOnDel img {
+    width: 95px;
+    vertical-align: top;
+    position: relative;
+    margin-left: 5px;
+    top: -9px;
 }
 .paymentSec_21 p.cashOnDel > span {
     line-height: 24px;
@@ -3329,6 +3375,11 @@ p.prepaid_txt {
     display: inline-block;
     min-width: 110px;
     text-align: center;
+}
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+    user-select: none;
 }
 .paymentSec_3 {
     width: 100%;
@@ -3381,6 +3432,13 @@ p.prepaid_txt {
     width: 100%;
     padding: 60px 0;
 }
+.privacy_policy h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 15px;
+}
 .privacy_policy h3 {
     font-weight: 500;
     font-size: 30px;
@@ -3421,9 +3479,19 @@ p.prepaid_txt {
 .privacy_policy p a, .privacy_policy p span {
     color: #D05335;
 }
-.privacy_policy p:last-of-type {
+.privacy_policy p:last-of-type { margin-bottom: 0; }
+.privacy_policy h2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29.6px;
+    color: #000000;
     margin-bottom: 0;
 }
+.privacy_policy h2 b { font-weight: 600; }
+.privacy_policy ul { padding-left: 20px; }
+.privacy_policy ul li { list-style-type: disc; font-size: 14px;  line-height: 20px; font-weight: 300; color: #000000; margin-top: 0; margin-bottom: 15px;}
+.privacy_policy ul li b { font-weight: 600;}
+.privacy_policy ul li a, .privacy_policy ul li span { color: #D05335;}
 /*======= PRIVACY POLICY END ========*/
 /*======== CONTACT US START =========*/
 .contact_head {
@@ -3442,7 +3510,10 @@ p.prepaid_txt {
     line-height: 22px;
     font-weight: 300;
     color: #000000;
-    margin: 0;
+    margin-bottom: 5px;
+}
+.contact_head p:last-child {
+    margin-bottom: 0;
 }
 .contact_box {
     width: 100%;
@@ -3507,6 +3578,9 @@ p.prepaid_txt {
     margin-bottom: 20px;
     color: #000000;
 }
+.aboutus_sec20 h3:not(:first-child) {
+    margin-top: 30px;
+}
 .aboutus_sec20 p, .aboutus_sec30 p, .aboutus_sec312 li p {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -3515,13 +3589,16 @@ p.prepaid_txt {
     color: #000000;
     margin-bottom: 15px;
 }
-.aboutus_sec20 p:last-of-type, .aboutus_sec312 li p:last-of-type {
+.aboutus_sec20 p:last-of-type, .aboutus_sec312 li p:last-of-type, .aboutus_sec20 p.borderLeft:last-of-type {
     margin-bottom: 0;
 }
-.aboutus_sec20 p:first-of-type {
-    font-weight: 500;
+.aboutus_sec20 p.borderLeft, .aboutus_sec312 li p.borderLeft {
+    font-weight: 400;
     border-left: 3px solid #D05335;
-    padding-left: 15px;
+    padding-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
 .aboutus_sec3 {
     padding: 80px 0;
@@ -3535,6 +3612,7 @@ p.prepaid_txt {
 .aboutus_sec30 p {
     font-weight: 500;
     margin-bottom: 0;
+    font-size: 16px;
 }
 .aboutus_sec31 {
     width: 100%;
@@ -3546,7 +3624,7 @@ p.prepaid_txt {
 }
 .aboutus_sec311 img {
     width: 100%;
-    height: 100%;
+    height: 400px;
     object-fit: cover;
     object-position: left;
 }
