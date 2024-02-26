@@ -50,9 +50,6 @@
 }
 }
 @media (max-width: 1540px) {
-.outer_main {
-    min-height: unset;
-}
 .carousel_item img {
     height: 560px;
 }
@@ -147,8 +144,8 @@
     height: 450px;
 }
 .empty_sec h3 {
-    font-size: 24px;
-    line-height: 34px; 
+    font-size: 22px;
+    line-height: 32px;
 }
 .empty_sec h5 {
     font-size: 21px;
@@ -179,6 +176,9 @@
 }
 }
 @media (max-width: 1280px) {
+.outer_main {
+    min-height: calc(100vh - 431px);
+}
 .carousel_item .carousel-caption {
     width: 690px;
 }
@@ -224,9 +224,6 @@
 .subscribe_sec1 h3 {
     font-size: 38px;
     line-height: 62px;
-}
-.footer_sec1 {
-    padding: 60px 0;
 }
 .List_pagination {
     margin-top: 40px;
@@ -280,6 +277,14 @@
 .aboutus_sec312 ul li:not(:last-child) {
     margin-bottom: 20px;
 }
+.footer_sec1 {
+    padding: 40px 0;
+}
+}
+@media (max-width: 1199px) {
+.outer_main {
+    min-height: calc(100vh - 451px);
+}
 }
 @media (max-width: 1100px) {
 .menu_list, .head_box11 > ul {
@@ -312,7 +317,6 @@
     height: 230px;
 }
 .footer_sec1 {
-    padding: 40px 0;
     gap: 40px;
 }
 .footer_col.footer_col1 {
@@ -545,9 +549,6 @@
 .headSec_5 {
     margin-top: 20px;
 }
-.loginSign_pop .modal_form {
-    margin: 15px 0;
-}
 .signup_links2 {
     margin: 5px 0;
 }
@@ -777,9 +778,6 @@
 .header_outer.fixed_header {
     padding-bottom: 60px;
 }
-.head_box {
-    padding: 12px 0;
-}
 .head_box1 {
     position: relative;
     gap: 25px;
@@ -889,15 +887,9 @@
 .logo {
     margin-left: 20px;
     width: 38px;
-    height: 36px;
+    height: 35px;
     overflow: hidden;
     background-color: #102a83;
-}
-.logo img {
-    width: 129px;
-}
-.user_dropdown {
-    top: 44px;
 }
 .products_banner, .aboutus_sec {
     padding: 50px 0;
@@ -934,9 +926,6 @@
 }
 .subs_sec11 a {
     padding: 11px 30px;
-}
-.footer_logo img {
-    width: 129px;
 }
 .product_dtl11 {
     gap: 20px;
@@ -1024,8 +1013,8 @@
     width: 200px;
 }
 .empty_sec h3 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
     margin-bottom: 12px;
 }
 .empty_sec h5 {
@@ -1061,10 +1050,6 @@
 .paymentSec_21 p.cashOnDel img {
     width: 80px;
     top: -5px;
-}
-.loginSign_pop .modal_head h4 {
-    font-size: 26px;
-    line-height: 35px;
 }
 .links_list h2 {
     font-size: 32px;
@@ -1268,6 +1253,13 @@
     line-height: 40px;
     margin-bottom: 15px;
 }
+.rd_logo {
+    max-width: 450px;
+    width: unset;
+}
+.rd_logo > img {
+    width: 100px;
+}
 }
 @media (max-width: 480px) { 
 .b-nav {
@@ -1285,7 +1277,7 @@
     padding-bottom: 15px;
 }
 .footer_sec2 {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 .carousel_item .carousel-caption {
     width: 100%;
@@ -1338,10 +1330,6 @@
 .writeReview_m.loginSign_pop .modal-body {
     padding: 20px 15px;
 }
-.loginSign_pop .modal_head h4 {
-    font-size: 24px;
-    line-height: 32px;
-}
 .login_btns p {
     margin-top: 5px;
 }
@@ -1361,7 +1349,20 @@
 .aboutus_sec20 h3, .aboutus_sec30 h3 {
     font-size: 24px;
     line-height: 28px;
-
+}
+.inner_box {
+    width: 350px;
+    padding: 25px 20px;
+}
+.loginSign_pop {
+    padding: 20px;
+}
+.loginSign_pop .modal_form {
+    margin-top: 10px;
+}
+.loginSign_pop .modal_head h4 {
+    font-size: 22px;
+    line-height: 30px;
 }
 }
 @media (max-width: 450px) { 
@@ -1371,14 +1372,11 @@
 .List_pagination ul li:nth-child(4) {
     display: none;
 }
-.subs_sec11 {
-    gap: 12px;
-}
 .subs_sec11 a {
     padding: 10px 22px;
 }
 .subs_sec11 input {
-    width: calc(100% - 56px);
+    width: calc(100% - 113px);
     line-height: 20px;
     padding: 10px 15px;
 }
@@ -1451,7 +1449,10 @@
     gap: 2px;
 }
 .modal_form {
-    margin: 20px 0;
+    margin: 15px 0;
+}
+.input_field {
+    margin-bottom: 15px;
 }
 .prodtl_5 {
     margin-top: 20px;
@@ -1535,10 +1536,6 @@
 .headSec2 {
     margin-bottom: 10px;
 }
-.loginSign_pop .modal_head h4 {
-    font-size: 22px;
-    line-height: 30px;
-}
 .writeReview_m.loginSign_pop .modal-dialog {
     margin: 0 15px;
     width: calc(100% - 30px);
@@ -1547,6 +1544,9 @@
     font-size: 26px;
     line-height: 35px;
     margin-bottom: 12px;
+}
+.loginSign_pop {
+    padding: 15px;
 }
 }
 @media (max-width: 360px) { 
@@ -1584,6 +1584,7 @@
 }
 .subs_sec11 {
     flex-direction: column;
+    gap: 10px;
 }
 .subs_sec11 input, .subs_sec11 a {
     width: 100%;
@@ -1614,10 +1615,6 @@
 .cartBreadcrumbs ul li:not(:last-child):before {
     width: 30px;
 }
-.empty_sec h3 {
-    font-size: 20px;
-    line-height: 28px;
-}
 .empty_sec h5 {
     font-size: 19px;
     line-height: 24px;
@@ -1646,8 +1643,13 @@
     width: 115px;
     padding: 10px 12px;
 }
-.signup_links2 {
-    margin: 0;
+.confirmation_box p {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.inner_box {
+    width: calc(100% - 30px);
+    padding: 20px 15px;
 }
 }
 @media (max-width: 330px) { 

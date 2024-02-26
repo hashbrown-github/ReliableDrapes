@@ -306,7 +306,7 @@ section {
     display: inline-block;
 }
 .outer_main {
-    min-height: calc(100vh - 543px);
+    min-height: calc(100vh - 451px);
 }
 /*======= RADIO BTN START =======*/
 .contain_box {
@@ -446,7 +446,7 @@ section {
 }
 .top_header {
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     background-color: #1C2939;
 }
 .top_header p {
@@ -464,7 +464,7 @@ section {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 .head_box1 {
     display: flex;
@@ -475,7 +475,7 @@ section {
     display: none;
 }
 .logo img {
-    width: 140px;
+    width: 120px;
 }
 .menu_list {
     display: flex;
@@ -632,7 +632,7 @@ section {
     position: relative;
 }
 .user_dropdown {
-    top: 50px;
+    top: 40px;
     right: -10px;
     width: 280px;
     padding: 18px;
@@ -725,7 +725,7 @@ section {
 }
 .footer_sec1 {
     width: 100%;
-    padding: 80px 0;
+    padding: 50px 0;
     display: flex;
     gap: 50px;
 }
@@ -740,7 +740,7 @@ section {
 }
 .footer_sec2 {
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     border-top: 1px solid rgb(255 255 255 / 20%);
 }
 .footer_logo {
@@ -748,12 +748,12 @@ section {
     margin-bottom: 30px;
 }
 .footer_logo img {
-    width: 140px;
+    width: 120px;
 }
 .footer_col h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 500;
     color: #ffffff;
     margin-bottom: 20px;
@@ -807,7 +807,7 @@ section {
     gap: 10px;
 }
 .footer_col4 p img {
-    width: 20px;
+    width: 18px;
 }
 .footer_sec2 p, .footer_sec2 p a {
     font-family: 'Poppins', sans-serif;
@@ -927,10 +927,10 @@ section {
 .subs_sec11 {
     width: 100%;
     display: flex;
-    gap: 15px;
+    gap: 0;
 }
 .subs_sec11 input {
-    width: calc(100% - 141px);
+    width: calc(100% - 129px);
     border: 1px solid #F6EBD4;
     border-radius: 1px;
     padding: 10px 20px;
@@ -2318,11 +2318,11 @@ section {
 }
 .modal_form {
     width: 100%;
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: left;
 }
 .loginSign_pop .modal_form {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .input_field {
     width: 100%;
@@ -2391,7 +2391,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    gap: 12px;
+    gap: 5px;
 }
 .footer_btns .orangeBtn {
     font-size: 14px;
@@ -2418,6 +2418,25 @@ section {
 }
 /*======= PRODUCT DETAIL END =======*/
 /*===== LOGIN / SIGN UP POPUPS =====*/
+.logins_p {
+    padding: 20px 0;
+}
+.rd_logo {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+.rd_logo > a > img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+.loginSign_pop {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 25px;
+    text-align: left;
+}
 .writeReview_m.loginSign_pop .modal-dialog {
     max-width: 520px;
     text-align: left;
@@ -2427,8 +2446,8 @@ section {
 }
 .loginSign_pop h4 {
     font-weight: 500;
-    font-size: 28px;
-    line-height: 37px;
+    font-size: 24px;
+    line-height: 32px;
     color: #000000;
     margin-bottom: 10px;
 }
@@ -2452,6 +2471,27 @@ section {
 .footer_btns.login_btns a {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_btns .spinner-grow {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+}
+/* .footer_btns.login_btns a.orangeBtn span {
+    font-size: 18px;
+    animation: rotation 1s infinite linear;
+    margin-right: 7px;
+} */
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
 }
 .signup_links2 {
     text-align: center;
@@ -2518,6 +2558,9 @@ section {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
+}
+.footer_btns.login_btns p > a {
+    display: inline;
 }
 .showPass {
     position: absolute;
@@ -2678,8 +2721,8 @@ section {
 }
 .empty_sec h3 {
     font-weight: 500;
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 34px;
     color: #000000;
     margin-top: 0;
     margin-bottom: 15px;
@@ -2984,8 +3027,8 @@ span.org_color {
 .addSec_11 ul {
     width: 100%;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .addSec_11 ul li {
     width: 100%;
@@ -2995,6 +3038,34 @@ span.org_color {
     border: 1px solid #dddddd;
     /* box-shadow: 0 1px 5px rgb(0 0 0 / 12%); */
     position: relative;
+}
+.addSec_11 .addAddress_li {
+    width: 100%;
+    border: 1px dashed #D05335;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.addSec_11 .addAddress_li a {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.addAddress_li span {
+    font-size: 38px;
+    font-weight: 300;
+    color: #000000;
+}
+.addAddress_li h6 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
 }
 .addSec_11 li h5 {
     width: 100%;
@@ -3160,11 +3231,11 @@ span.org_color {
     width: unset;
     margin-right: 26px;
 }
-.error_div input {
-    border-color: #FF0000 !important;
+.error_div input, .error_div textarea {
+    border-color: #D05335 !important;
 }
 .error_msg {
-    color: #FF0000;
+    color: #D05335;
     text-align: left;
     font-size: 13px;
     line-height: 16px;
@@ -3833,6 +3904,21 @@ p.prepaid_txt {
     min-width: 300px;
     display: inline-block;
 }
+.empty_section.empty_section2 img {
+    width: unset;
+    height: 120px;
+}
+.empty_section.empty_section2 h3 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.empty_section.empty_section2 p:last-of-type {
+    margin-bottom: 0;
+}
+.empty_section.empty_section2 a {
+    margin-top: 18px;
+}
 .order_list li {
     width: 100%;
     border: 1px solid #dddddd;
@@ -3993,7 +4079,7 @@ p.prepaid_txt {
     font-size: 22px;
     font-weight: 300;
 }
-.address_div h6 {
+.address_div > h6 {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -4193,3 +4279,160 @@ button.makeDef_btn {
     color: #D05335;
 }
 /*============= SITEMAP CSS END =============*/
+/*====== CONFIRMATION / ALERT CSS START =====*/
+.confirmation_box {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: .3s all;
+}
+.inner_box {
+    width: 400px;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 1px;
+    box-shadow: 0 2px 30px #00000042;
+}
+.confirmation_box.show {
+    visibility: visible;
+    opacity: 1;
+}
+.confirmation_box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.btns_d {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btns_d button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 8px 22px;
+    border-radius: 1px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    display: inline-block;
+}
+.btns_d button.white_btn {
+    color: #000000;
+    border-color: #dddddd;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+.successful_msgT {
+    visibility: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 40px;
+    right: 30px;
+    background-color: #1C2939;
+    padding: 17px 30px;
+    border-radius: 2px;
+    text-align: center;
+}
+.successful_msgT p, .failed_msgT p  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.failed_msgT {
+    visibility: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 40px;
+    right: 30px;
+    background-color: #D05335;
+    padding: 17px 30px;
+    border-radius: 2px;
+    text-align: center;
+}
+.successful_msgT.show, .failed_msgT.show {
+    visibility: visible;
+    -webkit-animation: fadein .5s,fadeout .5s 2.6s;
+    animation: fadein .5s,fadeout .5s 2.6s;
+}
+@-webkit-keyframes fadein {
+from {
+    top: 0;
+    opacity: 0
+}
+to {
+    top: 40px;
+    opacity: 1
+}
+}
+@keyframes fadein {
+from {
+    top: 0;
+    opacity: 0
+}
+to {
+    top: 40px;
+    opacity: 1
+}
+}
+@-webkit-keyframes fadeout {
+from {
+    top: 40px;
+    opacity: 1
+}
+to {
+    top: 0;
+    opacity: 0
+}
+}
+@keyframes fadeout {
+from {
+    top: 40px;
+    opacity: 1
+}
+to {
+    top: 0;
+    opacity: 0
+}
+}
+/*======= CONFIRMATION / ALERT CSS END ======*/
+.inside_loader {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+.spinner-grow {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    animation: spinner-grow .75s linear infinite;
+}
+@keyframes spinner-grow {
+0% {
+    transform: scale(0);
+}
+50% {
+    opacity: 1;
+}
+}
