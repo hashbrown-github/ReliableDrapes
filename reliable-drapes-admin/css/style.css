@@ -416,17 +416,20 @@ button, button:hover, button:focus {
     align-items: center;
     margin-bottom: 20px;
 }
-.order__head button {
+.order__head a, .order__head button {
     border: 1px solid #cccccc;
-    padding: 3px 8px;
+    padding: 7px;
     border-radius: 3px;
     margin-right: 12px;
     cursor: pointer;
-    /* line-height: 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.order__head button i {
+.order__head a i, .order__head button i {
     color: #949393;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 20px;
 }
 .orderList_box2 {
     position: fixed;
@@ -3391,14 +3394,16 @@ span.Left_1 {
     font-weight: 600;
 }
 .back_btn {
+    width: 36px;
+    height: 38px;
     border: 1px solid #cccccc;
-    padding: 5px;
+    padding: 7px;
     border-radius: 3px;
     margin-right: 12px;
     cursor: pointer;
-    line-height: 25px;
-    width: 36px;
-    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .back_btn i {
     color: #949393;

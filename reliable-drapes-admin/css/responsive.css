@@ -182,6 +182,9 @@ a.navbar-brand img {
 .header_icons {
     padding: 10px;
 }
+.Right_side_input.ex_position {
+    margin-bottom: 10px;
+}
 }
 @media (max-width: 767px) {
 .background_box {
@@ -215,11 +218,11 @@ a.navbar-brand img {
 ul.editVariantList {
     padding-left: 0;
 }
-.Right_side_input.ex_position {
-    margin-bottom: 10px;
-}
 .edit_variantsSec {
     flex-wrap: wrap;
+}
+.edit_variantsSec .orderList_box {
+    width: 100%;
 }
 .variant_listType {
     width: 100%;
