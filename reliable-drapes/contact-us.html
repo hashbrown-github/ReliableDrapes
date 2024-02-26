@@ -161,7 +161,7 @@
               <textarea rows="3" name="message" placeholder=""></textarea>
             </div>
             <div class="footer_btns login_btns">
-              <a href="#" class="orangeBtn">Submit</a>
+              <a href="#" onclick="failfunction()" class="orangeBtn">Submit</a>
             </div>
           </div>
           <div class="Contact_Right">
@@ -169,9 +169,12 @@
           </div>
         </div>
         <!-- <div id="failed_toast">Message failed!</div> -->
-        <div id="success_toast">Thank you! Your query has been submitted.</div>
+        <!-- <div id="success_toast">Thank you! Your query has been submitted.</div> -->
       </div>
     </section>
+    <div id="show_failToast" class="failed_msgT">
+      <p>Message Failed! Try again.</p>
+    </div>
   </div>
   <footer class="footer_outer">
     <div class="container">
@@ -220,6 +223,16 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--======= TOAST SCRIPT END =======-->
+<script>
+  function failfunction() {
+    var x2 = document.getElementById("show_failToast");
+    x2.classList.add('show');
+    setTimeout(function(){ x2.classList.remove('show'); }, 3000);
+  }
+</script>
+<!--======= TOAST SCRIPT END =======-->
+
 <!--===== FIXED HEADER =====-->
 <script>
 $(window).scroll(function() {    // this will work when your window scrolled.
